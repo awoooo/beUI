@@ -1,0 +1,36 @@
+/*设置背景色*/
+body{ background-color:$bg-color; }
+
+input{ 
+	font-size:1rem; 
+	color:gray; 
+}
+
+.be-footer-blank{
+	width:100%;
+	height:3rem;
+}
+
+/*去除标题的加粗样式*/
+h6,h5,h4,h3{
+	font-weight:normal;
+}
+
+/*设置li列的数量*/
+.be-col-1{ li{ float:left;width:100%; } }
+.be-col-2{ li{ float:left;width:50%; } }
+.be-col-3{ li{ float:left;width:33.33%; } }
+.be-col-4{ li{ float:left;width:25%; } }
+.be-col-5{ li{ float:left;width:20%; } }
+
+li[data-color="warm"]{ color:#e52 !important; }
+li[data-color="submit"]{ color:#3aa !important; }
+
+//解决retain线条粗细
+Element{ border-width: thin; }
+
+//解决旋转字体大小
+html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
+    -webkit-text-size-adjust:100%;
+}
+

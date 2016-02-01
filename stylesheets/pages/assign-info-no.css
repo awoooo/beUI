@@ -1,0 +1,14 @@
+/* line 2, ../../sass/pages/assign-info-no.scss */
+.person-list li > div > label, .comment-list li > div > label {
+  width: 10rem;
+}
+
+/* line 8, ../../sass/pages/assign-info-no.scss */
+.footer-col-3 li > a {
+  border-top: 1px solid #fff;
+  border-right: 1px solid #666;
+}
+/* line 12, ../../sass/pages/assign-info-no.scss */
+.footer-col-3 li:last-child > a {
+  border-right: none;
+}

@@ -1,0 +1,37 @@
+.be-sumary{
+	float:left;
+	width:96%;
+	padding:0 2%;
+	background-color:darken($bg-color, 5%);
+	li{
+		margin:.5rem 0;
+		float:left;
+		background-color:$white;
+	}
+	p{
+		font-size:.6rem;
+		margin-bottom:.3rem;
+		color:#666;
+	}
+	em{
+		font-size:1rem;
+		font-style:normal;
+		font-weight:bold;
+		color:$pro-color;
+	}
+	span{
+		display:inline-block;
+		text-align:left;
+		margin:.5rem 0;
+		width:89%;
+		padding:0 0 0 .4rem;
+	}
+	div:active{
+		background-color:$gray-ccc;
+	}
+
+	li:first-child span{
+		border-left:none;
+	}
+}
+

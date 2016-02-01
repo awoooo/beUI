@@ -1,0 +1,14 @@
+	<ul class="common-func tab-col-2">
+		<li>
+			<a href="#">
+				<i class="fa fa-user fa-2x"></i>
+				<p>func one</p>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<i class="fa fa-user fa-2x"></i>
+				<p>func one</p>
+			</a>
+		</li>
+	</ul>

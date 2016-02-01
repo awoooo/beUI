@@ -1,0 +1,47 @@
+.be-form{
+	background-color:$white;
+
+	li{
+		clear:both;
+		padding-left:4%;
+		width:96%;
+
+		&:last-child div{
+			border-bottom:none;
+		}
+	}
+
+	small i{
+		margin-left:.3rem;
+	} //small iocn
+
+	span{
+		float:left;
+		padding:.35rem 0;
+		margin-right:.5rem;
+	} //icon part;
+
+	div{
+		padding:.76rem 5% .76rem 0;
+		line-height:1.2rem;
+	} //border bottom part;
+
+	label{
+		float:right;
+		color:#666;
+		.be-switch{
+			margin-top:-.35rem;
+		}
+	} //list right block;
+
+	li > em{
+		display:inline-block;
+		width:100%;
+		margin:.7rem 0;
+		text-align:center;
+		font-style:normal;
+		font-weight:normal;
+	}
+
+}
+

@@ -1,0 +1,57 @@
+/* line 1, ../../sass/pages/forbes.scss */
+.forbes-page {
+  padding: 0 2%;
+}
+/* line 3, ../../sass/pages/forbes.scss */
+.forbes-page > h1
+.detail-list, .forbes-page .comment-list {
+  border: none;
+  box-shadow: 0 0 5px #888;
+}
+/* line 11, ../../sass/pages/forbes.scss */
+.forbes-page .detail-list {
+  margin: .5rem 0;
+  border: none;
+  color: red;
+  background-color: #ffd;
+}
+/* line 16, ../../sass/pages/forbes.scss */
+.forbes-page .detail-list span {
+  border-bottom: 1px solid #ffcc66;
+  padding-bottom: .5rem;
+}
+/* line 20, ../../sass/pages/forbes.scss */
+.forbes-page .detail-list li:last-child span {
+  border-bottom: none;
+}
+/* line 23, ../../sass/pages/forbes.scss */
+.forbes-page .detail-list img {
+  border-radius: .3rem;
+}
+/* line 28, ../../sass/pages/forbes.scss */
+.forbes-page .comment-list {
+  clear: both;
+}
+/* line 30, ../../sass/pages/forbes.scss */
+.forbes-page .comment-list div {
+  border-bottom: 1px solid #ffcc66;
+}
+/* line 35, ../../sass/pages/forbes.scss */
+.forbes-page h6 {
+  font-weight: bold !important;
+}
+
+/* line 40, ../../sass/pages/forbes.scss */
+.forbes-title {
+  padding: .3rem 0;
+  font-size: 1.5rem;
+  color: #ffd;
+  font-weight: normal;
+  text-align: center;
+  background-color: #fc0;
+}
+/* line 49, ../../sass/pages/forbes.scss */
+.forbes-title i {
+  font-size: 1.3rem;
+  margin-right: .3rem;
+}

@@ -1,0 +1,94 @@
+$turn-on:#0b0;
+$turn-off:#eee;
+$slide-btn:rgb(255,255,255);
+
+//开关样式
+.be-switch{
+	display:block;
+	padding:.1rem;
+	width:2.8rem;
+	height:1.85rem;
+	line-height:1.5rem;
+	border-radius:3rem;
+
+	em{
+		display:block;
+		padding:.25rem;
+		width:1rem;
+		height:1rem;
+		border-radius:1rem;
+		background:$slide-btn;
+		box-shadow:2px 2px  3px gray;
+	}
+
+}
+
+.be-turn-off{
+	background-color:$turn-off;
+	border:1px solid darken($turn-off,10%);
+}
+
+.be-turn-on{
+	background-color:$turn-on;
+	border:1px solid $turn-on;
+	em{ float:right; }
+}
+
+//滑块样式
+
+.be-range{
+	width:100%;
+	&>span{
+		display:inline-block;
+		width:2.5rem;
+		height:2rem;
+		line-height:2rem;
+		text-align:center;
+		float:right;
+		&:first-child{
+			float:left;
+		}
+	}
+
+	div{
+		margin:0 3rem;
+		padding:.9rem 0;
+		//height:.2rem;
+		span{
+			display:inline-block;
+			float:left;
+			width:100%;//总值长度
+			color:#3af;
+			border-bottom:solid 2px #aaa;
+		}
+
+		label{
+			display:inline-block;
+			float:left;
+			margin-top:-2px;
+			width:50%;//选择值长度
+			color:#ccc;
+			border-bottom:solid 2px #3af;
+		}
+
+		em{
+			display:block;
+			position:relative;
+			z-index:10;
+			margin-top:-.7rem;
+			margin-left:50%;//滑块位置
+			i{
+				display:block;
+				padding:.25rem;
+				margin-left:-.75rem;
+				width:1rem;
+				height:1rem;
+				border-radius:1rem;
+				background:$slide-btn;
+				//background:none;
+				box-shadow:2px 2px  3px gray;
+			}
+		}
+
+	}
+}

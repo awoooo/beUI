@@ -1,0 +1,77 @@
+.users-list{
+	float:left;
+	border-top:1px solid $gray-ccc;
+	border-bottom:1px solid $gray-ccc;
+	background-color:$white;
+
+	&>li{
+		@extend .detail-common;
+		&>div{
+			li{
+			border-bottom:none;
+			}
+		}
+	}
+
+
+	//header part;
+	&>li>div>img{
+		float:left;
+		width:4rem;
+		height:4rem;
+		margin-right:.5rem;
+	}
+	&>li>div>.header-img{
+		border-radius:3rem;
+		margin-top:.2rem;
+	}
+
+	//border bottom part;
+	&>li>div{
+		width:100%;
+		float:left;
+		padding:.5rem 0 .5rem 0;
+		//margin-bottom:.5rem;
+		border-bottom:1px solid $gray-ccc;
+		h6{
+			font-size:1rem;
+			line-height:1.2rem;
+			font-weight:normal;
+			margin-bottom:.2rem;
+		}
+		span{
+			display:block;
+			margin-left:5rem;
+		}
+		small{
+			font-size:.8rem;
+			line-height:1.5rem;
+			color:#888;
+		}
+		p{
+			font-size:.8rem;
+			color:#666;
+			line-height:1.3rem;
+		}
+	}
+	/*new unline */
+	&>li:last-child >div{
+		border-bottom:none;
+	}
+
+	ol{
+		float:left;
+		width:100%;
+		margin:.3rem 0 -.5rem 0;
+		li{
+			float:left;
+			padding:.4rem 0;
+			font-size:.8rem;
+			color:$pro-color;
+			border-top:1px solid $gray-ccc;
+			border-bottom:1px solid $gray-ccc;
+		}
+	}
+}
+
+

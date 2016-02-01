@@ -1,0 +1,29 @@
+	<ul class="common-footer footer-col-4">
+		<li class="active">
+			<a href="#">
+				<i class="fa fa-user fa-lg"></i>
+				<p>fun</p>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<i class="fa fa-user fa-lg"></i>
+				<p>fun</p>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<i class="fa fa-user fa-lg"></i>
+				<p>fun</p>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<i class="fa fa-user fa-lg"></i>
+				<p>fun</p>
+			</a>
+		</li>
+		
+	</ul>
+
+	<div class="fixed-footer-blank"></div>

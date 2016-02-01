@@ -1,0 +1,54 @@
+.be-btn { width:90%;
+	padding:0 5%;
+	margin:1.5rem 0 2rem 0;
+	button{
+		display:inline-block;
+		margin:.5rem 0;
+		padding:.5rem 0;
+		text-align:center;
+		font-size:1rem;
+		border-radius:.3rem;
+	}
+	//按钮主题选择
+	@extend .btn-colorTheme;
+}
+
+//按钮数量
+.be-col-1{
+	button{ width:100%;}
+}
+
+.be-col-2{
+	button{ width:47.5%;
+		&:last-child{ float:right; }
+	//	&:first-child{ margin-right:5%;}
+	}
+}
+
+.be-col-3{
+	button{ width:30%;
+		&:first-child{ float:left; 
+		margin-right:5%;}
+		&:last-child{ float:right; }
+	}
+}
+
+//浅色主题样式
+.btn-whiteTheme{
+	button{ background-color:#fff;
+	border:1px solid $gray-ccc; }
+	.be-btn-normal{ color:$btn-normal-color; }
+	.be-btn-submit{ color:$btn-submit-color; }
+	.be-btn-cancer{ color:$btn-cancer-color; }
+	.be-btn-unactived{ color:$btn-unactived-color; }
+
+}
+
+//彩色主题样式
+.btn-colorTheme{
+	button{ color:#fff;}
+	.be-btn-normal{ background-color:$btn-normal-color; } 
+	.be-btn-submit{ background-color:$btn-submit-color; } 
+	.be-btn-cancer{ background-color:$btn-cancer-color; }
+	.be-btn-unactived{ background-color:$btn-unactived-color; }
+}

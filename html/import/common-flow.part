@@ -1,0 +1,43 @@
+	<ul class="common-flow">
+		<li>
+			<span> <img src="/images/header.jpg"> </span>
+			<i class="fa fa-comment fa-fw"><span> </span></i> <!-- 跟单状态图标 -->
+			<div>
+				<span class="triangle"> </span>
+				<h5>回访<em>详情<i class="fa fa-info-circle fa-fx"></i></em></h5>
+				<p> <em>置业顾问</em> <em> 2015-08-22 23:52<i class="fa fa-angle-right fa-fx"></i></em></p>
+			</div>
+		</li>
+
+		<li>
+			<span> <img src="/images/header.jpg"> </span>
+			<i class="fa fa-map-marker fa-lg"><span> </span></i> <!-- 跟单状态图标 -->
+			<div>
+				<span class="triangle"> </span>
+				<h5> 到访<em>详情<i class="fa fa-info-circle fa-fx"></i></em></h5>
+				<p><em>销售员</em> <em> 2015-08-22 23:52<i class="fa fa-angle-right fa-fx"></i></em> </p>
+			</div>
+		</li>
+
+		<li>
+			<span> <img src="/images/header.jpg"> </span>
+			<i class="fa fa-legal fa-lg"><span> </span></i> <!-- 跟单状态图标 -->
+			<div>
+				<span class="triangle"> </span>
+				<h5>成交<em>详情<i class="fa fa-info-circle fa-fx"></i></em></h5>
+				<p> <em>销售员</em><em> 2015-08-22 23:52<i class="fa fa-angle-right fa-fx"></i></em> </p>
+				
+			</div>
+		</li>
+
+		<li>
+			<span> <img src="/images/header.jpg"> </span>
+			<i class="fa fa-ban fa-lg"></i> <!-- 跟单状态图标 -->
+			<div>
+				<span class="triangle"> </span>
+				<h5> 终止跟单<em>详情<i class="fa fa-info-circle fa-fx"></i></em></h5>
+				<p> <em>销售员</em><em> 2015-08-22 23:52<i class="fa fa-angle-right fa-fx"></i></em> </p>
+			</div>
+		</li>
+
+	</ul>

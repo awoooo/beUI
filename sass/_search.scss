@@ -1,0 +1,53 @@
+$search-bg-color: #efefef;
+$search-input-color: #fff;
+
+.common-search{
+	width:95%;
+	height:1.9rem;
+	padding:.6rem 2.5%;
+	@extend .search-li; //主题选择
+
+	input{
+		float:left;
+		width:94%;
+		height:1rem;
+		line-height:1rem;
+		padding:.4rem 3%;
+		border:none;
+		font-size:.9rem;
+		border-radius:.3rem;
+	}
+
+	i{
+		display:inline-block;
+		float:right;
+		width:2rem;
+		height:1rem;
+		text-align:center;
+		padding:.4rem 0;
+		margin-left:-2.5rem;
+		border-radius:0 .3rem .3rem 0;
+	}
+
+}
+
+//浅灰色主题
+.search-li{
+	background-color:$search-bg-color;
+	//border-bottom:1px solid $gray-ccc;
+	input,i{
+		background-color:$search-input-color;
+		color:gray;
+	}
+}
+
+//专色主题
+.search-dark{
+	background-color:$pro-color;
+	input,i{
+		color:#fff;
+		background-color:lighten($pro-color,10%);
+	}
+}
+
+

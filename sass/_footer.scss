@@ -1,0 +1,49 @@
+.be-footer{
+	position:fixed;
+	bottom:0;
+	width:100%;
+	background-color:$white;
+
+	div{
+		float:left;
+		text-align:center;
+		height:2rem;
+		padding:.5rem 0;
+		display:inline-block;
+		color:gray;
+		&:active{
+			background-color: lighten($gray-ccc,5%);
+		}
+	}
+	p{
+		margin-top:.1rem;
+		font-size:.8rem;
+	}
+	.active{
+		color:$pro-color;
+	}
+	li:active{
+		background-color: $gray-ccc;
+	}
+
+}
+
+//三个图标样式
+.be-footer-3{
+	div{
+		width:33.33%;
+	}
+}
+//四个图标样式
+.be-footer-4{
+	div{
+		width:25%;
+	}
+}
+//五个图标样式
+.be-footer-5{
+	div{
+		width:20%;
+	}
+}
+

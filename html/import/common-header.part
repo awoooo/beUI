@@ -1,0 +1,20 @@
+	<div class="common-header">
+		<div class="nav-fix">
+			<div>
+				<a href="/index.html">
+					<i class="fa fa-home fa-lg" href="#"></i>
+				</a>
+				<i class="fa fa-bars fa-lg"></i>
+				<span><p>可更换标题</p> </span>
+			</div>
+			<ol id="paramSearch">
+				<li><a href="#">时间排序 <i class="fa fa-sort fa-lg"></i></a></li>
+				<li><a onclick="toTop()" href="javascript:void(0)">回到顶部 <i class="fa fa-anchor fa-lg"></i></a></li>
+			</ol>
+		</div>
+		<div class="placeholder">&nbsp;</div>
+	</div>
+	
+	
+	
+	

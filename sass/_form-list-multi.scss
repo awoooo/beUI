@@ -1,0 +1,104 @@
+.be-form-multi{
+	clear:both;
+	background-color:$white;
+
+&>li{
+		clear:both;
+		padding-left:4%;
+		width:96%;
+
+		&:last-child div{
+			border-bottom:none !important;
+		}
+
+		span{
+			margin-top:.35rem;
+		}
+
+        input[type="text"],input[type="password"],input[type="date"]{
+            padding: .5rem 0;
+			height:1rem;
+			line-height:1rem;
+            text-align: right;
+            width: 100%;
+            border:none;
+            color: gray;
+        }
+        
+        div>span{
+            display: inline-block;
+            width: 4.5rem;
+            float: left;
+        }
+        div>div{
+			color:gray;
+            margin-left: 7rem;
+			text-align:right;
+			input[type="radio"]{
+				margin:.5rem 0 .5rem 1rem;
+			}
+			i{
+				margin:.5rem 0 .5rem .5rem;
+			}
+        }
+
+		textarea{
+			margin:.7rem 0 .5rem 0;
+			width:95%;
+			height:7rem;
+			resize:none;
+            font-size: 1rem;
+			border:none;
+			color:gray;
+            font-size: 1rem;
+		}
+
+		ol{
+			position:absolute;
+			display:none;
+			overflow:hidden;
+			width:92%;
+			z-index:10;
+			border-radius:.5rem;
+			box-shadow:0 0 .5rem #aaa;
+			border:1px solid $white;
+			li{
+				padding:.65rem 0;
+				text-align:center;
+				color:#fff;
+				background-color:#999;
+				font-size:1rem;
+				border-bottom:1px solid $gray-ccc;
+				//border-bottom:1px solid darken($gray-ccc,15%);
+			}
+			li:last-child{
+				border-bottom:none;
+			}
+		}
+	}
+
+	//icon part;
+	&>li>span{
+		float:left;
+		margin-right:.5rem;
+        text-align: center;
+	}
+
+	//border bottom part;
+	&>li>div{
+		padding:.33rem 5% .33rem 0;
+		line-height:1.2rem;
+	}
+
+	//list right block;
+	label{
+		float:right;
+		color:#666;
+		.common-switch{
+			margin-top:-.3rem;
+		}
+	}
+
+}
+
+

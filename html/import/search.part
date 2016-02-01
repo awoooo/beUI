@@ -1,0 +1,4 @@
+	<div class="common-search">
+		<input type="text" placeholder="请输入查询关键字">
+		<i class="fa fa-search fa-fx"></i>
+	</div>

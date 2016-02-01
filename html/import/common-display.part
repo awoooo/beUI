@@ -1,0 +1,30 @@
+	<ul class="common-display tab-col-4">
+		<li>
+			<div><span> <p>可用房币</p> <em>20000</em> </span></div>
+		</li>
+		<li>
+			<div><span> <p>推荐房亲</p> <em>20</em> </span></div>
+		</li>
+		<li>
+			<div><span> <p>推荐房源</p> <em>0</em></span> </div>
+		</li>
+		<li>
+			<div><span> <p>可提现房币</p> <em>20</em></span> </div>
+		</li>
+	</ul>
+
+	
+	<ul class="common-display tab-col-4">
+		<li>
+			<div><a href="#"> <p>可用房币</p> <em>20000</em> </a></div>
+		</li>
+		<li>
+			<div><a href="#"> <p>推荐房亲</p> <em>20</em> </a></div>
+		</li>
+		<li>
+			<div><a href="#"> <p>推荐房源</p> <em>0</em></a> </div>
+		</li>
+		<li>
+			<div><a href="#"> <p>可提现房币</p> <em>20</em></a> </div>
+		</li>
+	</ul>

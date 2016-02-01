@@ -1,0 +1,23 @@
+.be-func{
+	width:100%;
+	float:left;
+	background-color:$white;
+	li{
+		padding:.8rem 0 .5rem 0;
+		text-align:center;
+		&:active{
+			background-color:$gray-ccc;
+		}
+	}
+
+	p{
+		line-height:1.3rem;
+		font-size:.8rem;
+	}
+
+	i{
+		position:relative;
+		display:block;
+	}
+}
+

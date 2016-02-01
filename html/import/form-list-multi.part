@@ -1,0 +1,90 @@
+    <ul class="common-list-multi">
+        
+	
+		<li>
+			<div>
+                <span>个性设置</span>
+                <div><input type="text" placeholder="inpu text"></div>
+			</div>
+		</li>
+		
+		<li>
+			<span class="fa-stack fa-fx">
+				  <i class="fa fa-square fa-stack-2x" style="color:#3af"></i>
+				  <i class="fa fa-user fa-stack-1x fa-inverse"></i>
+			</span>
+			<div>
+                <span>个性设置</span>
+                <div><input type="text" placeholder="inpu text"></div>
+			</div>
+		</li>
+		
+
+		<li>
+			<span class="fa-stack fa-fx">
+				  <i class="fa fa-square fa-stack-2x" style="color:#3af"></i>
+				  <i class="fa fa-user fa-stack-1x fa-inverse"></i>
+			</span>
+			<div>
+				list-one
+				<label>
+					dtials <i class="fa fa-angle-right fa-fx"></i>
+				</label>
+			</div>
+		</li>
+		
+
+		<li>
+			<span class="fa-stack fa-fx">
+               <small>
+                <i class="fa fa-credit-card fa-2x" style="color:#3af"></i>
+               </small>
+            </span>
+			<div>
+				list-one
+				<label>
+					dtials <i class="fa fa-angle-right fa-fx"></i>
+				</label>
+			</div>
+		</li>
+		
+		<!-- 输入框 -->	
+		<li>
+			<span class="fa-stack fa-fx">
+               <small>
+                <i class="fa fa-user fa-2x" style="color:#3af"></i>
+               </small>
+            </span>
+			<div>
+                <span>个性设置</span>
+                <div><input type="text" placeholder="inpu text"></div>
+			</div>
+		</li>
+		
+		<!-- 下拉列表	-->	
+		<li>
+			<div>
+                <span>list</span>
+                <div>
+					select&nbsp;<i class="fa fa-caret-down fa-fx"></i>
+				</div>
+			</div>
+			<ol>
+				<li>list-one</li>  
+				<li>list-two</li>
+			</ol>
+		</li>
+		
+		<!-- 复选框 -->	
+		<li>
+			<div>
+                <span>客户性别</span>
+                <div>
+					<input type="radio" name="sex"><i class="fa fa-male fa-fx"></i>
+					<input type="radio" name="sex"><i class="fa fa-female fa-fx"></i>
+				</div>
+			</div>
+		</li>
+		
+
+	</ul>

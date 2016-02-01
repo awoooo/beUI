@@ -1,0 +1,56 @@
+	<ul class="comment-list">
+		<li>
+			<span> <img src="/images/header.jpg" alt="">  </span>
+			<div>
+				<span>
+					<h5>Title
+						<small>AidedInfo</small>
+					</h5>
+					<p>hp:18789998622</p>
+				</span>
+			</div>
+		</li>
+		
+		<li>
+			<span> <img src="/images/header.jpg" alt=""> </span>
+			<div>
+				<span>
+					<h5> list-one
+						<em>2016-01-12
+						</em>
+					</h5>
+					<p>hp:18789998622 </p>
+				</span>
+			</div>
+		</li>
+
+		<li>
+			<span> <img src="/images/header.jpg" alt=""> </span>
+			<div>
+				<span>
+					<h5> list-one
+						<em>
+							<i class="fa fa-angle-right fa-lg"></i>
+						</em>
+					</h5>
+					<p>hp:18789998622 
+						<em>2016-01-12</em>
+					</p>
+				</span>
+			</div>
+		</li>
+
+		<li>
+			<span> <img src="/images/header.jpg" alt=""><em></em> </span>
+			<div>
+				<span>
+					<h5> list-one
+						<em>2016-01-12
+							<i class="fa fa-angle-right fa-fx"></i>
+						</em>
+					</h5>
+					<p>a long textarea info about everything for display</p>
+				</span>
+			</div>
+		</li>
+	</ul>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=no">
+	<link rel="stylesheet" href="/stylesheets/screen.css" media="all">
+	<link rel="stylesheet" href="/public/font-awesome-4.4.0/css/font-awesome.min.css">
+	<title>common</title>
+
+	<script type="text/javascript" src="/public/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="/public/public.js"></script>
+	<script>
+	$(function(){
+		rangeTouch('button1');
+		rangeTouch('button2');
+	});
+	</script>
+
+</head>
+<body>
+
+	<button class="be-switch be-turn-off"> <em></em> </button>
+	<div class="be-blank">&nbsp;</div>
+	<button class="be-switch be-turn-on"> <em></em> </button>
+
+	<div class="be-range">
+		<span><p>50</p></span>
+		<span><p>100</p></span>
+		<div>
+			<span></span>
+			<label></label>
+			<em id="button1"><i></i></em>
+		</div>
+	</div>
+		
+	<div class="be-range">
+		<span><i class="fa fa-volume-down fa-lg"></i></span>
+		<span><i class="fa fa-volume-up fa-lg"></i></span>
+		<div>
+			<span></span>
+			<label></label>
+			<em id="button2"><i></i></em>
+		</div>
+	</div>
+		
+</body>
+</html>
