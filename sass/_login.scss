@@ -1,15 +1,58 @@
 .be-login{
 //*{border:1px red solid;margin:1px ;}
-	width:100%;
-
 		clear:both;
 		float:left;
-		border-top:1px solid $gray-ccc;
-		border-bottom:1px solid $gray-ccc;
+		width:100%;
 		background-color:$white;
-		margin-bottom:.5rem;
 	li{
+		padding:0 0 0 5%;
+		&:last-child div{
+			border-bottom:none;
+		}
+		div>i{
+			width:2rem;
+			text-align:center;
+			font-size:1.3rem;
+		}
+		
+		div>span{
+			display:block;
+			margin-right:35%;
+		}
+
+		div>div{
+			margin:0 32% 0 2.2rem;
+		}
+
+		button{
+			float:right;
+			padding:.25rem .4rem;
+			margin:.5rem 5% 0 0;
+			font-size:.8rem;
+			color:gray;
+		}
+
+		input{
+			width:100%;
+			margin:.4rem 0;
+			padding:.3rem 0;
+			border:none;
+		}
+
+
+		i{
+			float:left;
+			margin-top:.5rem;
+		}
+
+		.fa-lock{
+			margin:.8rem 5% 0 0;
+			float:right;
+			font-size:1rem;
+			color:gray;
+		}
 	}
+
 
 }
 
