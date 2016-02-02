@@ -1,0 +1,143 @@
+	<ul class="be-form-multi be-border-tb">
+	
+		<!-- No-icon 输入框	-->	
+		<li>
+			<div class="be-border-b">
+                <span>Author</span>
+                <div><input type="text" placeholder="input text"></div>
+			</div>
+		</li>
+
+		<!-- No-icon 下拉列表	-->	
+		<li>
+			<div class="be-border-b">
+                <span>list</span>
+                <div>
+					select<i class="fa fa-caret-down fa-fx"></i>
+				</div>
+			</div>
+			<ol>
+				<li>list-one</li>  
+				<li>list-two</li>
+			</ol>
+		</li>
+		
+		<!-- No-icon  复选框 -->	
+		<li>
+			<div class="be-border-b">
+                <span>Sex</span>
+                <div>
+					<input type="radio" name="sex"><i class="fa fa-male fa-fx"></i>
+					<input type="radio" name="sex"><i class="fa fa-female fa-fx"></i>
+				</div>
+			</div>
+		</li>
+		
+	</ul>
+	<div class="be-blank">&nbsp;</div>
+	
+	<ul class="be-form-multi be-border-tb">
+		<!-- bg-icon 输入框 -->	
+		<li>
+			<span class="fa-stack fa-fx">
+				  <i class="fa fa-square fa-stack-2x" style="color:#888"></i>
+				  <i class="fa fa-edit fa-stack-1x fa-inverse"></i>
+			</span>
+			<div class="be-border-b">
+                <span>Author</span>
+                <div><input type="text" placeholder="input text"></div>
+			</div>
+		</li>
+		
+		<!-- bg-icon 下拉列表 -->	
+		<li>
+			<span class="fa-stack fa-fx">
+				  <i class="fa fa-square fa-stack-2x" style="color:#888"></i>
+				  <i class="fa fa-list fa-stack-1x fa-inverse"></i>
+			</span>
+			<div class="be-border-b">
+                <span>list</span>
+                <div>
+					select
+					<i class="fa fa-caret-down fa-fx"></i>
+				</div>
+			</div>
+			<ol>
+				<li>list-one</li>  
+				<li>list-two</li>
+			</ol>
+		</li>
+		
+		<!-- bg-icon 单选框 -->	
+		<li>
+			<span class="fa-stack fa-fx">
+				  <i class="fa fa-square fa-stack-2x" style="color:#888"></i>
+				  <i class="fa fa-user fa-stack-1x fa-inverse"></i>
+			</span>
+			<div class="be-border-b">
+                <span>Sex</span>
+                <div>
+					<input type="radio" name="sex"><i class="fa fa-male fa-fx"></i>
+					<input type="radio" name="sex"><i class="fa fa-female fa-fx"></i>
+				</div>
+			</div>
+		</li>
+	</ul>
+		
+	<div class="be-blank">&nbsp;</div>
+	
+    <ul class="be-form-multi be-border-tb">
+		<!-- 图标输入框 -->	
+		<li>
+			<span class="fa-stack fa-fx">
+               <small>
+                <i class="fa fa-edit fa-2x" style="color:#888"></i>
+               </small>
+            </span>
+			<div class="be-border-b">
+                <span>Users</span>
+                <div><input type="text" placeholder="input text"></div>
+			</div>
+		</li>
+
+		<li>
+			<span class="fa-stack fa-fx">
+               <small>
+                <i class="fa fa-list fa-2x" style="color:#888"></i>
+               </small>
+            </span>
+			<div class="be-border-b">
+                <span>list</span>
+                <div>
+					select
+					<i class="fa fa-caret-down fa-fx"></i>
+				</div>
+			</div>
+			<ol>
+				<li>list-one</li>  
+				<li>list-two</li>
+			</ol>
+		</li>
+
+		<li>
+			<span class="fa-stack fa-fx">
+               <small>
+                <i class="fa fa-user fa-2x" style="color:#888"></i>
+               </small>
+            </span>
+			<div class="be-border-b">
+                <span>Sex</span>
+                <div>
+					<input type="radio" name="sex"><i class="fa fa-male fa-fx"></i>
+					<input type="radio" name="sex"><i class="fa fa-female fa-fx"></i>
+				</div>
+			</div>
+		</li>
+
+		<!-- 多行输入框 -->	
+		<li>
+			<textarea placeholder="input area"></textarea>
+		</li>
+
+
+	</ul>

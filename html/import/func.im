@@ -1,0 +1,10 @@
+	<ul class="be-func be-col-2 be-border-b">
+		<li>
+			<i class="fa fa-user fa-2x" style="color:#888"></i>
+			<p>Func one</p>
+		</li>
+		<li>
+			<i class="fa fa-gear fa-2x" style="color:#888"></i>
+			<p>Func one</p>
+		</li>
+	</ul>

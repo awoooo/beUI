@@ -1,0 +1,70 @@
+	<ul class="be-list be-border-tb">
+		<li>
+			<span> <img src="/images/header.jpg" alt="">  </span>
+			<div class="be-border-b">
+				<span>
+					<h5>Title
+						<small>AidedInfo</small>
+					</h5>
+					<p>hp:18789998622</p>
+				</span>
+			</div>
+		</li>
+		
+		<li>
+			<span> <img src="/images/header.jpg" alt=""> </span>
+			<div class="be-border-b">
+				<span>
+					<h5> list-one
+						<em>2016-01-12
+						</em>
+					</h5>
+					<p>hp:18789998622 </p>
+				</span>
+			</div>
+		</li>
+
+		<li>
+			<span> <img src="/images/header.jpg" alt=""> </span>
+			<div class="be-border-b">
+				<span>
+					<h5> list-one
+						<em>
+							<i class="fa fa-angle-right fa-lg"></i>
+						</em>
+					</h5>
+					<p>hp:18789998622 
+						<em>2016-01-12</em>
+					</p>
+				</span>
+			</div>
+		</li>
+
+		<li>
+			<span> <img src="/images/header.jpg" alt=""><em></em> </span>
+			<div class="be-border-b">
+				<span>
+					<h5> list-one
+						<em>2016-01-12
+							<i class="fa fa-angle-right fa-fx"></i>
+						</em>
+					</h5>
+					<p>a long textarea info about everything for display and test</p>
+				</span>
+			</div>
+		</li>
+
+		<li>
+			<div class="be-border-b">
+				<span>
+					<h5> list-one
+						<em>2016-01-12
+							<i class="fa fa-angle-right fa-fx"></i>
+						</em>
+					</h5>
+					<p>a long textarea info about everything for display and test</p>
+				</span>
+			</div>
+		</li>
+
+	</ul>

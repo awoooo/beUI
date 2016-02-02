@@ -1,0 +1,32 @@
+	<div class="be-btn be-col-1">
+		<button class="be-btn-unactived" onClick="window.open('/index.html')">
+			<i class="fa fa-check fa-lg"> </i> submit
+		</button>
+	</div>
+	
+	<div class="be-btn be-col-1">
+		<button class="be-btn-submit" onClick="window.location='/index.html'">
+			<i class="fa fa-check fa-lg"> </i> submit
+		</button>
+	</div>
+
+	<div class="be-btn be-col-2">
+		<button class="be-btn-cancer">
+			<i class="fa fa-times fa-lg"> </i> cancel
+		</button>
+		<button class="be-btn-submit" >
+			<i class="fa fa-check fa-lg"> </i> submit
+		</button>
+	</div>
+   
+	<div class="be-btn be-col-3">
+		<button class="be-btn-cancer">
+			<i class="fa fa-times fa-lg"> </i> cancel
+		</button>
+        <button class="be-btn-normal">
+			<i class="fa fa-info-circle fa-lg"> </i> normal
+		</button>
+		<button class="be-btn-submit" >
+			<i class="fa fa-check fa-lg"> </i> submit
+		</button>
+	</div>

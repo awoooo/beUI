@@ -1,0 +1,12 @@
+	<div class="be-blank">&nbsp;</div>
+	<div class="be-personal be-border-tb">
+		<img src="/images/header.jpg">
+		<span>
+			<i class="fa fa-qrcode fa-lg"></i>
+			<i class="fa fa-angle-right fa-lg"></i>
+		</span>
+		<div>
+			<h5>用户姓名</h5>
+			<p>185898882347834</p>
+		</div>
+	</div>

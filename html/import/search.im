@@ -1,0 +1,52 @@
+	<div class="be-search">
+		<input type="text" placeholder="请输入查询关键字">
+		<i class="fa fa-search fa-fx"></i>
+	</div>
+
+	<div class="be-search-list">
+		<label>
+			<span>
+				<em>分类</em>
+				<i class="fa fa-caret-down fa-fx"></i>
+				<ul>
+					<li>时间分类</li>
+					<li>姓名类</li>
+				</ul>
+			</span>
+		</label>
+		<label>
+			<span>
+				搜索<i class="fa fa-search fa-fx"></i>
+			</span>
+		</label>
+		<div>
+			<span>
+				<input type="text" placeholder="搜索内容">
+			</span>
+		</div>
+	</div>
+
+	<div class="be-search-list-func">
+		<label>
+			<span>
+				<em>分类</em><i class="fa fa-caret-down fa-fx"></i>
+				<ul>
+					<li>时间分类 </li>
+					<li> 姓名序 </li>
+				</ul>
+			</span>
+		</label>
+		<a href="#">
+			<i class="fa fa-gear fa-fx"></i>
+		</a>
+		<label>
+			<span>
+				搜索<i class="fa fa-search fa-fx"></i>
+			</span>
+		</label>
+		<div>
+			<span>
+				<input type="text" placeholder="搜索内容">
+			</span>
+		</div>
+	</div>

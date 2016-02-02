@@ -1,0 +1,47 @@
+	<div class="be-blank">&nbsp;</div>
+
+	<ul class="be-login">
+		
+		<li class="be-login-icon">
+			<div>
+				<i class="fa fa-mobile fa-fx"></i>
+				<span>
+					<input type="text" placeholder="请输入手机号">
+					<label>获取验证码</label>
+				</span>
+			</div>
+		</li>
+
+		<li class="be-login-icon">
+			<div>
+				<i class="fa fa-user fa-fx"></i>
+				<span>
+					<input type="password" placeholder="请输入密码">
+					<i class="fa fa-lock fa-fx"></i>
+				</span>
+			</div>
+		</li>
+
+	</ul>
+
+	<div class="be-blank">&nbsp;</div>
+	<ul class="be-login">
+		<li>
+			<div>
+				<span>
+					<input type="text" placeholder="请输入手机号">
+					<label class="active">获取验证码</label>
+				</span>
+			</div>
+		</li>
+
+		<li>
+			<div>
+				<span>
+					<input type="password" placeholder="请输入密码">
+					<i class="fa fa-lock fa-fx"></i>
+				</span>
+			</div>
+		</li>
+
+	</ul>

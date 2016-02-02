@@ -1,0 +1,10 @@
+	<header class="be-header">
+		<i class="fa fa-home fa-lg" data-href="#"></i>
+		<i class="fa fa-bars fa-lg"></i>
+		<span><h1>当前页标题</h1> </span>
+		<ol>
+			<li data-href="#">时间排序 <i class="fa fa-sort fa-lg"></i></li>
+			<li data-href="#">回到顶部 <i class="fa fa-anchor fa-lg"></i></li>
+		</ol>
+	</header>
+	<div class="be-header-placeholder">&nbsp;</div>
