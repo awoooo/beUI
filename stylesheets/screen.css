@@ -1143,18 +1143,22 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
 .be-list p i {
   margin-right: .3rem;
 }
-/* line 84, ../sass/_be-list.scss */
+/* line 81, ../sass/_be-list.scss */
+.be-list p a {
+  color: gray;
+}
+/* line 87, ../sass/_be-list.scss */
 .be-list label {
   float: right;
   width: 3rem;
   text-align: right;
   color: #666;
 }
-/* line 89, ../sass/_be-list.scss */
+/* line 92, ../sass/_be-list.scss */
 .be-list label i {
   line-height: 2.5rem;
 }
-/* line 93, ../sass/_be-list.scss */
+/* line 96, ../sass/_be-list.scss */
 .be-list .fa-color-green {
   color: green;
 }
@@ -1499,7 +1503,7 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
 .be-login li button {
   float: right;
   padding: .25rem .4rem;
-  margin: .45rem 5% 0 0;
+  margin: .5rem 5% 0 0;
   font-size: .8rem;
   color: gray;
 }
