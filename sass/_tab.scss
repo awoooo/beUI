@@ -33,4 +33,11 @@
 		}
 	}
 }
-
+.be-tab-content{
+	&>li{
+		display:none;
+	}
+	&>.active{
+		display:block;
+	}
+}

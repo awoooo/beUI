@@ -32,8 +32,8 @@ $(function(){
 	/* 公共下拉列表结束 */
 
 	/* 公共搜索分类选择开始*/
-	slideMenu ( '.search-list');
-	slideMenu ( '.search-list-func');
+	slideMenu ( '.be-search-list');
+	slideMenu ( '.be-search-list-func');
 	/* 公共搜索分类选择结束*/
 
 
@@ -55,6 +55,24 @@ $(function(){
 	})
 	/* 公共单项选择框结束*/
 
+
+	/* 公共tab标签开始*/
+	//$('.be-tab-content li').css({'display':'block'});
+	$('.be-tab-title li').click(function(){
+		var num_index = ( $(this).index() );
+		var node = $(this).parent().next('.be-tab-content').children('li');
+
+		$(this).siblings().removeClass();
+		$(this).addClass('active');
+
+		node.each(function( i_index ){
+			$(this).css({'display':'none'});
+			if ( i_index == num_index ){
+				$(this).css({'display':'block'});
+			}
+		});
+	});
+	/* 公共tab标签结束*/
 	
 });
 /* 弹出列表函数 */

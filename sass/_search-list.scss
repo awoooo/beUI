@@ -1,7 +1,7 @@
 $search-bg-color: #fff;
 $search-input-color: #fff;
 
-.search-list{
+.be-search-list{
 	width:95%;
 	height:2.1rem;
 	padding:.6rem 2.5%;
@@ -82,7 +82,7 @@ $search-input-color: #fff;
 	}
 
 }
-.search-list-func{
+.be-search-list-func{
 	width:95%;
 	height:2.1rem;
 	padding:.6rem 2.5%;
@@ -118,7 +118,7 @@ $search-input-color: #fff;
 	a{
 		float:right;
 		width:2rem;
-		margin-right:.5rem;
+		margin-right:.3rem;
 		i{
 			display:inline-block;
 			width:100%;
@@ -134,7 +134,7 @@ $search-input-color: #fff;
 
 	div{
 		margin-left:4.6rem;
-		margin-right:6rem;
+		margin-right:5.8rem;
 		span{
 			display:block;
 			border-top:1px solid $gray-ccc;
