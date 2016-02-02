@@ -1499,7 +1499,7 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
 .be-login li button {
   float: right;
   padding: .25rem .4rem;
-  margin: .5rem 5% 0 0;
+  margin: .45rem 5% 0 0;
   font-size: .8rem;
   color: gray;
 }

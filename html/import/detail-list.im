@@ -1,3 +1,5 @@
+ul.be-detail.be-border-tb>li>div>(img[src=/images/case.png]+span>h6{list-one}+small{point}+p{infomation}+ol.be-col-1>li.be-border-tb>i.fa.fa-user)
+
 	<ul class="be-detail be-border-tb">
 		
 		<li>
