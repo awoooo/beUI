@@ -1320,12 +1320,12 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
   margin-top: -.3rem;
 }
 
-/* line 1, ../sass/_list-slide.scss */
+/* line 1, ../sass/_form-slide.scss */
 .be-form-multi {
   transition: .3s ease-in;
 }
-/* line 3, ../sass/_list-slide.scss */
-.be-form-multi ul {
+/* line 3, ../sass/_form-slide.scss */
+.be-form-multi section {
   position: absolute;
   display: none;
   left: 100%;
@@ -1333,18 +1333,22 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
   width: 100%;
   background-color: #fff;
 }
-/* line 11, ../sass/_list-slide.scss */
+/* line 11, ../sass/_form-slide.scss */
+.be-form-multi ul {
+  width: 100%;
+}
+/* line 13, ../sass/_form-slide.scss */
 .be-form-multi ul li {
   margin-left: 5%;
   width: 90%;
   padding: .7rem 5% .7rem 0;
 }
-/* line 15, ../sass/_list-slide.scss */
+/* line 17, ../sass/_form-slide.scss */
 .be-form-multi ul li i {
   float: right;
   color: #3af;
 }
-/* line 20, ../sass/_list-slide.scss */
+/* line 22, ../sass/_form-slide.scss */
 .be-form-multi ul > li:last-child {
   border-bottom: none;
 }

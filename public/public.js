@@ -76,18 +76,18 @@ $(function(){
 	
 	/*选择菜单切换开始 */
 	var ul_node;
-	$('.be-form-multi ul').parent().click(function(){
+	$('.be-form-multi section').parent().click(function(){
 		$('.be-form-multi').css({'margin':'0 100% 0 -100%'});
-		$(this).children('ul').css({ 'z-index':'-1'});
-		$(this).children('ul').css({ 'display':'block','left':'0'});
+		$(this).children('section').css({ 'z-index':'-1'});
+		$(this).children('section').css({ 'display':'block','left':'0'});
 		ul_node = this;
 		setTimeout(function () {
-			$(ul_node).children('ul').css({ 'z-index':'10'});
+			$(ul_node).children('section').css({ 'z-index':'10'});
 		},500);
 	});//点击选项
 
 	$('.be-form-multi ul li').click(function(){
-		var node = $(this).parent().siblings('div').children('div');
+		var node = $(this).parent().parent().siblings('div').children('div');
 		var select_val = $(this).html();
 		var return_val = $(this).html() + '<i class="fa fa-angle-right fa-fx"></i>';
 		
@@ -103,7 +103,7 @@ $(function(){
 		setTimeout(function () {
 			$('.be-form-multi').css({'margin':'0'});
 			setTimeout(function () {
-				$('.be-form-multi ul').css({'display':'none'});
+				$('.be-form-multi section').css({'display':'none'});
 			},100);
 			event.stopPropagation();
 		},200);
