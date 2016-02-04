@@ -74,6 +74,42 @@ $(function(){
 	});
 	/* 公共tab标签结束*/
 	
+	/*选择菜单切换开始 */
+	var ul_node;
+	$('.be-form-multi ul').parent().click(function(){
+		$('.be-form-multi').css({'margin':'0 100% 0 -100%'});
+		$(this).children('ul').css({ 'z-index':'-1'});
+		$(this).children('ul').css({ 'display':'block','left':'0'});
+		ul_node = this;
+		setTimeout(function () {
+			$(ul_node).children('ul').css({ 'z-index':'10'});
+		},500);
+	});//点击选项
+
+	$('.be-form-multi ul li').click(function(){
+		var node = $(this).parent().siblings('div').children('div');
+		var select_val = $(this).html();
+		var return_val = $(this).html() + '<i class="fa fa-angle-right fa-fx"></i>';
+		
+		if ( $(this).html().indexOf('</i>') == -1 ) {
+			node.html(return_val);
+			select_val = $(this).html() + '<i class="fa fa-check fa-fx"></i>';
+		}//判断是否重复选择
+
+		//清除选择图标
+		$(this).siblings().children('i').remove();
+		$(this).html(select_val);
+
+		setTimeout(function () {
+			$('.be-form-multi').css({'margin':'0'});
+			setTimeout(function () {
+				$('.be-form-multi ul').css({'display':'none'});
+			},100);
+			event.stopPropagation();
+		},200);
+	});
+	/*选择菜单切换结束 */
+	
 });
 /* 弹出列表函数 */
 function alertList(className){

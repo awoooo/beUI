@@ -3,6 +3,12 @@
 	width:96%;
 	padding:0 2%;
 	background-color:darken($bg-color, 5%);
+	li:first-child{
+		span{
+			border-left:none;
+		}
+	}
+
 	li{
 		margin:.5rem 0;
 		float:left;
