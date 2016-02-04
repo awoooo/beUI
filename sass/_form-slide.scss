@@ -1,0 +1,26 @@
+.be-form-multi{
+	transition:.3s ease-in;
+	section{
+		position:absolute;
+		display:none;
+		left:100%;
+		top:1.5rem;
+		width:100%;
+		background-color:#fff;
+	}
+	ul{
+		width:100%;
+		li{
+			margin-left:5%;
+			width:90%;
+			padding:.7rem 5% .7rem 0;
+			i{
+				float:right;
+				color:#3af;
+			}
+		}
+		&>li:last-child{
+			border-bottom:none;
+		}
+	}
+}
