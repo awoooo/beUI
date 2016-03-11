@@ -1016,16 +1016,21 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 33, ../sass/_footer.scss */
+.be-footer-2 div {
+  width: 50%;
+}
+
+/* line 39, ../sass/_footer.scss */
 .be-footer-3 div {
   width: 33.33%;
 }
 
-/* line 39, ../sass/_footer.scss */
+/* line 45, ../sass/_footer.scss */
 .be-footer-4 div {
   width: 25%;
 }
 
-/* line 45, ../sass/_footer.scss */
+/* line 51, ../sass/_footer.scss */
 .be-footer-5 div {
   width: 20%;
 }
@@ -1171,48 +1176,43 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
 .be-form {
   background-color: #fff;
 }
-/* line 4, ../sass/_form-list.scss */
+/* line 3, ../sass/_form-list.scss */
 .be-form li {
   clear: both;
-  padding-left: 4%;
-  width: 96%;
+  padding-left: 5%;
 }
-/* line 9, ../sass/_form-list.scss */
-.be-form li:last-child div {
-  border-bottom: none;
-}
-/* line 14, ../sass/_form-list.scss */
-.be-form small i {
-  margin-left: .3rem;
-}
-/* line 18, ../sass/_form-list.scss */
+/* line 7, ../sass/_form-list.scss */
 .be-form span {
   float: left;
-  padding: .35rem 0;
-  margin-right: .5rem;
+  text-align: center;
+  margin-top: .4rem;
 }
-/* line 24, ../sass/_form-list.scss */
+/* line 12, ../sass/_form-list.scss */
+.be-form span + div {
+  margin-left: 2.5rem;
+}
+/* line 15, ../sass/_form-list.scss */
 .be-form div {
-  padding: .76rem 5% .76rem 0;
-  line-height: 1.2rem;
+  padding: .8rem 5% .8rem 0;
 }
-/* line 29, ../sass/_form-list.scss */
+/* line 19, ../sass/_form-list.scss */
 .be-form label {
   float: right;
   color: #666;
 }
-/* line 32, ../sass/_form-list.scss */
-.be-form label .be-switch {
-  margin-top: -.35rem;
+/* line 23, ../sass/_form-list.scss */
+.be-form li:last-child div {
+  border-bottom: none;
 }
-/* line 37, ../sass/_form-list.scss */
+/* line 26, ../sass/_form-list.scss */
+.be-form button {
+  margin-top: -.3rem;
+}
+/* line 30, ../sass/_form-list.scss */
 .be-form li > em {
-  display: inline-block;
-  width: 100%;
-  margin: .7rem 0;
+  display: block;
   text-align: center;
-  font-style: normal;
-  font-weight: normal;
+  padding: .7rem 0;
 }
 
 /* line 1, ../sass/_form-list-multi.scss */
@@ -1235,7 +1235,9 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
   margin-top: .35rem;
 }
 /* line 18, ../sass/_form-list-multi.scss */
-.be-form-multi > li input[type="text"], .be-form-multi > li input[type="password"], .be-form-multi > li input[type="date"] {
+.be-form-multi > li input[type="text"],
+.be-form-multi > li input[type="password"],
+.be-form-multi > li input[type="date"] {
   padding: .5rem 0;
   height: 1rem;
   line-height: 1rem;
@@ -1244,27 +1246,27 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
   border: none;
   color: gray;
 }
-/* line 28, ../sass/_form-list-multi.scss */
+/* line 30, ../sass/_form-list-multi.scss */
 .be-form-multi > li div > span {
   display: inline-block;
   width: 4.5rem;
   float: left;
 }
-/* line 33, ../sass/_form-list-multi.scss */
+/* line 35, ../sass/_form-list-multi.scss */
 .be-form-multi > li div > div {
   color: gray;
   margin-left: 7rem;
   text-align: right;
 }
-/* line 37, ../sass/_form-list-multi.scss */
+/* line 39, ../sass/_form-list-multi.scss */
 .be-form-multi > li div > div input[type="radio"] {
   margin: .5rem 0 .5rem 1rem;
 }
-/* line 40, ../sass/_form-list-multi.scss */
+/* line 42, ../sass/_form-list-multi.scss */
 .be-form-multi > li div > div i {
   margin: .5rem 0 .5rem .5rem;
 }
-/* line 45, ../sass/_form-list-multi.scss */
+/* line 47, ../sass/_form-list-multi.scss */
 .be-form-multi > li textarea {
   margin: .7rem 0 .5rem 0;
   width: 95%;
@@ -1275,7 +1277,7 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
   color: gray;
   font-size: 1rem;
 }
-/* line 56, ../sass/_form-list-multi.scss */
+/* line 58, ../sass/_form-list-multi.scss */
 .be-form-multi > li ol {
   position: absolute;
   display: none;
@@ -1286,7 +1288,7 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 0 .5rem #aaa;
   border: 1px solid #fff;
 }
-/* line 65, ../sass/_form-list-multi.scss */
+/* line 67, ../sass/_form-list-multi.scss */
 .be-form-multi > li ol li {
   padding: .65rem 0;
   text-align: center;
@@ -1295,27 +1297,27 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
   font-size: 1rem;
   border-bottom: 1px solid #ccc;
 }
-/* line 74, ../sass/_form-list-multi.scss */
+/* line 76, ../sass/_form-list-multi.scss */
 .be-form-multi > li ol li:last-child {
   border-bottom: none;
 }
-/* line 81, ../sass/_form-list-multi.scss */
+/* line 83, ../sass/_form-list-multi.scss */
 .be-form-multi > li > span {
   float: left;
   margin-right: .5rem;
   text-align: center;
 }
-/* line 88, ../sass/_form-list-multi.scss */
+/* line 90, ../sass/_form-list-multi.scss */
 .be-form-multi > li > div {
   padding: .33rem 5% .33rem 0;
   line-height: 1.2rem;
 }
-/* line 94, ../sass/_form-list-multi.scss */
+/* line 96, ../sass/_form-list-multi.scss */
 .be-form-multi label {
   float: right;
   color: #666;
 }
-/* line 97, ../sass/_form-list-multi.scss */
+/* line 99, ../sass/_form-list-multi.scss */
 .be-form-multi label .common-switch {
   margin-top: -.3rem;
 }
@@ -1504,6 +1506,48 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
   color: gray;
   width: 90%;
   padding: 1.2rem 5% .3rem 5%;
+}
+
+/* line 1, ../sass/_slider.scss */
+.be-slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background-color: #fff;
+}
+/* line 7, ../sass/_slider.scss */
+.be-slider ul {
+  position: absolute;
+  left: 0;
+}
+/* line 12, ../sass/_slider.scss */
+.be-slider li {
+  float: left;
+}
+/* line 16, ../sass/_slider.scss */
+.be-slider li img {
+  position: relative;
+  width: 100%;
+}
+/* line 22, ../sass/_slider.scss */
+.be-slider ol {
+  position: absolute;
+  z-index: 99;
+}
+/* line 26, ../sass/_slider.scss */
+.be-slider ol li > i {
+  display: block;
+  margin: .15rem;
+  width: .3rem;
+  height: .3rem;
+  border-radius: .3rem;
+  background-color: #ddd;
+  border: 1px solid #888;
+}
+/* line 35, ../sass/_slider.scss */
+.be-slider ol .active i {
+  background-color: #3af;
+  border: 1px solid #fff;
 }
 
 /* line 1, ../sass/_login.scss */

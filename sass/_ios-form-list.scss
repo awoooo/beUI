@@ -1,13 +1,13 @@
-.be-form{
-	background-color:#fff;
+.ios-form{
 	li{
 		clear:both;
+		background-color:#fff;
 		padding-left:5%;
 	}
 	span{
 		float:left;
 		text-align:center;
-		margin-top:.4rem;
+		margin-top:.5rem;
 	}
 	span + div{
 		margin-left:2.5rem;
@@ -23,14 +23,4 @@
 	li:last-child div{
 		border-bottom:none;
 	}
-	button{
-		margin-top:-.3rem;
-	}
-
-	li>em{
-		display:block;
-		text-align:center;
-		padding:.7rem 0;
-	}
-
 }

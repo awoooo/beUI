@@ -1,0 +1,40 @@
+.be-slider{
+	position:relative;
+	overflow:hidden;
+	width:100%;
+	background-color: #fff;
+
+	ul{
+		position:absolute;
+		left:0;
+	}
+
+	li{
+		float:left;
+	}
+
+	li img{ 
+		position:relative;
+		width: 100%;
+	}
+
+	//指示点样式
+	ol{
+		position: absolute;
+		z-index:99;
+	}
+	ol li>i{
+		display: block;
+		margin:.15rem;
+		width:.3rem;
+		height: .3rem;
+		border-radius: .3rem;
+		background-color: #ddd;
+		border: 1px solid #888;
+	}
+	ol .active i{
+		background-color: #3af;
+		border: 1px solid #fff;
+	}
+	
+}

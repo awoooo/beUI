@@ -1,0 +1,21 @@
+	<ul class="be-form-multi be-border-tb">
+		<li>
+			<div class="be-border-b">
+                <span>list</span>
+                <div>
+					select<i class="fa fa-angle-right fa-fx"></i>
+				</div>
+			</div>
+			<section>
+			<h5 class="be-title be-border-t">
+				<i class="fa fa-minus fa-fx fa-rotate-90"></i>
+				This is a tittle
+			</h5>
+			<ul class="be-border-tb">
+				<li class="be-border-b">list-one</li>  
+				<li class="be-border-b">list-two</li>
+				<li class="be-border-b">list-three</li>
+			</ul>
+			</section>
+		</li>
+	</ul>
