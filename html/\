@@ -1,0 +1,94 @@
+$(function(){
+	var one = ['one','two','three','four'];
+	var four = ['1','2','3','4'];
+	var vals = {};
+
+		$('#four-test').click(function(){
+			checkboxClick( $(this), one );
+		})
+
+	//多选方法
+	function checkboxClick( obj, initItems ){
+		var ulTag = obj.parent();
+		vals[obj.attr('id')] = [];
+		ulTag.parent().append( checkboxInit( initItems ) );
+		ulTag.css('margin-left','-100%');
+
+		ulTag.siblings('ol').children('li').click(function(){
+			checkboxMark( $(this). vars[ ulTag.attr('id')])
+		})
+	}
+
+	function checkboxMark( obj, itemsArr ){
+		if ( obj.attr('class') != 'button') {
+			if( obj.children().size() == 0 ) {
+				obj.append('<i class="fa fa-check"></i>');
+				vals[obj.attr('id')].push( itemsArr[$(this).index()]);
+			}else{
+				obj.children('i').remove();
+				vals[obj.attr('id')].pop();
+			}
+		}else{
+			ulTag.css("margin-left","0");
+			timeoutDel( ulTag.siblings());
+		};
+		console.log(vals[obj.attr('id')]);
+	}
+
+	//多选初始化
+	function checkboxInit( items ){
+		var lineBlk = '';
+		for(i=0; i<items.length; i++){
+			lineBlk += '<li class="be-border-b">' + items[i] + '</li>';
+		}
+		lineBlk += '<li class="button"> <i class="fa fa-angle-left"></i> back </li>'
+		lineBlk = '<ol>' + lineBlk + '</ol>';
+		return lineBlk;
+	}
+
+	//单选方法
+	function radioClick( obj, initItems ){
+		var ulTag = obj.parent();
+		ulTag.parent().append( radioInit( initItems, vals[obj.attr('id')] ) );
+		ulTag.css('margin-left','-100%');
+
+		ulTag.siblings('ol').children('li').click(function(){
+			var handle = $(this);
+			vals[obj.attr('id')] = radioMark( $(this), vals[obj.attr('id')]);
+			ulTag.css('margin-left','0');
+			timeoutDel( handle.parent() );
+		})
+	}
+		
+	//延时删除
+	function timeoutDel( obj){
+		setTimeout(function(){
+			obj.remove();
+		},500);
+	}
+
+	//单选初始化
+	function radioInit( items, val ){
+		var lineBlk = '';
+		for(i=0; i<items.length; i++){
+			if( items[i] == val ){
+				lineBlk += '<li class="be-border-b">'+items[i];
+				lineBlk += '<i class="fa fa-check"></i></li>';
+			}else{
+				lineBlk += '<li class="be-border-b">'+items[i]+'</li>';
+			};
+		}
+		lineBlk = '<ol>' + lineBlk + '</ol>';
+		return lineBlk;
+	}
+	//单选标记当前选项
+	function radioMark( radioSelectedObj, selectedVal ){
+		radioSelectedObj.parent().find('i').remove();
+		selectedVal = radioSelectedObj.html();
+		if( radioSelectedObj.children().size() == 0 ){
+			radioSelectedObj.append( '<i class="fa fa-check"></i>');
+		};
+		return selectedVal;
+	}
+
+})

@@ -1,0 +1,71 @@
+<!DOCTYPE html> <html lang="zh">
+<head> <title>beUI</title> <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<link rel="stylesheet" href="/stylesheets/screen.css" media="all">
+<link rel="stylesheet" href="/public/font-awesome-4.4.0/css/font-awesome.min.css">
+<script type="text/javascript" src="/public/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="/public/public.js"></script>
+<script type="text/javascript" src="/public/form-slider.js"></script>
+</head>
+<script src=""></script>
+<body>
+
+
+<div class="be-form-slider">
+	<section>
+		<ul>
+
+			<li id="one-test">
+				<div class="be-border-b"> 
+					<span>radio list</span>
+					<label>
+						<i class="fa fa-angle-right"></i>
+					</label>
+				</div>
+			</li>
+
+			<div class="be-border-tb">&nbsp;</div>
+
+			<li id="four-test">
+				<div class="be-border-b"> 
+					<span>checkbox list</span>
+					<label>
+						<i class="fa fa-angle-right"></i>
+					</label>
+				</div>
+			</li>
+
+			<li id="end-test" class="">
+				<div class="be-border-b"> 
+					<span>
+					<span class="fa-stack">
+						 <i class="fa fa-square fa-stack-2x" style="color:#f00"></i>
+						<i class="fa fa-terminal fa-stack-1x fa-inverse"></i>
+					</span>
+					checkbox list</span>
+					<label>
+						<i class="fa fa-angle-right"></i>
+					</label>
+				</div>
+			</li>
+
+			<li id="input" class="">
+				<div class="be-border-b"> 
+					<span>
+					<span class="fa-stack">
+						 <i class="fa fa-square fa-stack-2x" style="color:#3af"></i>
+						<i class="fa fa-user fa-stack-1x fa-inverse"></i>
+					</span>
+					input list</span>
+					<label>
+						<input type="text" placeholder="Please input">
+					</label>
+				</div>
+			</li>
+
+		</ul>
+	</section>
+</div>
+
+</body>
+</html>

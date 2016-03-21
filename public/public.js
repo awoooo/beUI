@@ -36,8 +36,17 @@ $(function(){
 	slideMenu ( '.be-search-list-func');
 	/* 公共搜索分类选择结束*/
 
+	/* 常规公共多项选择框开始*/
+	$('.be-check').click(function(){
+		if( $(this).children('i').attr('class') == 'fa fa-circle-thin fa-lg'){
+			$(this).children('i').removeClass().addClass('fa fa-check-circle fa-lg');
+		}else{
+			$(this).children('i').removeClass().addClass('fa fa-circle-thin fa-lg');
+		}
+	})
+	/* 常规公共多项选择框结束*/
 
-	/* 公共多项选择框开始*/
+	/* ios公共多项选择框开始*/
 	$('.common-checkbox li').click(function(){
 		if( $(this).attr('class') == 'active' ){
 			$(this).removeClass();
@@ -45,15 +54,15 @@ $(function(){
 			$(this).addClass('active');
 		}
 	})
-	/* 公共多项选择框结束*/
+	/* ios公共多项选择框结束*/
 
 	
-	/* 公共单项选择框开始*/
+	/* ios公共单项选择框开始*/
 	$('.common-checkbox-radio li').click(function(){
 		$(this).siblings().removeClass();
 		$(this).addClass('active');
 	})
-	/* 公共单项选择框结束*/
+	/* ios公共单项选择框结束*/
 
 
 	/* 公共tab标签开始*/

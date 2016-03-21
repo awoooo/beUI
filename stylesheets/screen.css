@@ -1323,36 +1323,83 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 1, ../sass/_form-slide.scss */
-.be-form-multi {
-  transition: .3s ease-in;
-}
-/* line 3, ../sass/_form-slide.scss */
-.be-form-multi section {
-  position: absolute;
-  display: none;
-  left: 100%;
-  top: 1.5rem;
+.be-form-slider {
   width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+/* line 6, ../sass/_form-slide.scss */
+.be-form-slider li {
   background-color: #fff;
+  width: 95%;
+  padding-left: 5%;
 }
-/* line 11, ../sass/_form-slide.scss */
-.be-form-multi ul {
-  width: 100%;
+/* line 10, ../sass/_form-slide.scss */
+.be-form-slider li > div {
+  width: 95%;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  padding: .2rem 5% .2rem 0;
 }
-/* line 13, ../sass/_form-slide.scss */
-.be-form-multi ul li {
-  margin-left: 5%;
-  width: 90%;
-  padding: .7rem 5% .7rem 0;
+/* line 18, ../sass/_form-slide.scss */
+.be-form-slider > section {
+  height: 100%;
+  width: 200%;
 }
-/* line 17, ../sass/_form-slide.scss */
-.be-form-multi ul li i {
+/* line 23, ../sass/_form-slide.scss */
+.be-form-slider section > ul,
+.be-form-slider section > ol {
+  display: block;
+  width: 50%;
+  height: 100%;
+  float: left;
+  transition: .5s;
+}
+/* line 34, ../sass/_form-slide.scss */
+.be-form-slider section > ul li span > span {
+  margin: -.2rem .3rem 0 0;
+}
+/* line 38, ../sass/_form-slide.scss */
+.be-form-slider section > ul li label {
   float: right;
+  color: #666;
+}
+/* line 42, ../sass/_form-slide.scss */
+.be-form-slider section > ul li label input {
+  border: none;
+  text-align: right;
+}
+/* line 49, ../sass/_form-slide.scss */
+.be-form-slider section > ul li:last-child > div {
+  border-bottom: none;
+}
+/* line 53, ../sass/_form-slide.scss */
+.be-form-slider section > ul > div {
+  margin-top: -.5px;
+}
+/* line 60, ../sass/_form-slide.scss */
+.be-form-slider section > ol li {
+  padding: .2rem 5%;
+  height: 2.5rem;
+  line-height: 2.5rem;
+}
+/* line 65, ../sass/_form-slide.scss */
+.be-form-slider section > ol li > .fa-check {
+  float: right;
+  margin-right: 5%;
+  height: 2.5rem;
+  line-height: 2.5rem;
   color: #3af;
 }
-/* line 22, ../sass/_form-slide.scss */
-.be-form-multi ul > li:last-child {
-  border-bottom: none;
+/* line 72, ../sass/_form-slide.scss */
+.be-form-slider section > ol li > .fa-angle-left {
+  margin-right: .5rem;
+}
+/* line 77, ../sass/_form-slide.scss */
+.be-form-slider .button {
+  margin-top: 1.5rem;
+  text-align: center;
+  color: #666;
 }
 
 /* line 1, ../sass/_flow.scss */
@@ -1506,6 +1553,31 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
   color: gray;
   width: 90%;
   padding: 1.2rem 5% .3rem 5%;
+}
+
+/* line 2, ../sass/_cards.scss */
+.be-cards li {
+  margin: 3%;
+  background-color: #fff;
+}
+/* line 7, ../sass/_cards.scss */
+.be-cards h5, .be-cards span {
+  padding: 0 2%;
+  line-height: 2.5rem;
+}
+/* line 12, ../sass/_cards.scss */
+.be-cards div {
+  padding: .5rem 2%;
+}
+/* line 16, ../sass/_cards.scss */
+.be-cards label {
+  float: right;
+  margin: 0 3%;
+  color: #3af;
+}
+/* line 22, ../sass/_cards.scss */
+.be-cards b {
+  color: red;
 }
 
 /* line 1, ../sass/_slider.scss */

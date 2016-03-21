@@ -1,0 +1,117 @@
+<!DOCTYPE html> <html lang="zh">
+<head> <title>beUI</title> <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<link rel="stylesheet" href="/stylesheets/screen.css" media="all">
+<link rel="stylesheet" href="/public/font-awesome-4.4.0/css/font-awesome.min.css">
+<script type="text/javascript" src="/public/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="/public/public.js"></script>
+<script>
+	$(function(){
+
+		$('.be-form-slider').parent().parent().css('height','100%');
+		$('.be-form-slider').parent().css('height','100%');
+		$('.be-form-slider').find('.checkbox')
+
+		var sliderTag = $('.test').children('section');
+
+		//具有选项的列表点击事件
+		sliderTag.children('ul').children('li').click(function()
+		{
+			var liTag = $(this);
+			var ulTag = liTag.parents('ul');
+			var actTag = ulTag.find('ol');
+			//添加多选返回按钮
+			var checkTag = liTag.children('.checkbox');
+			checkTag.find('.fa-angle-left').parent().remove();
+			checkTag.append('<li><i class="fa fa-angle-left"></i>' +
+							checkTag.siblings('div').children('.returnName').html() + 
+							'</li>');
+
+			liTag.children('ol').insertAfter( ulTag);
+			ulTag.css("margin-left","-100%");
+
+			//选项清单的点击事件
+			ulTag.siblings('ol').children('li').click(function()
+			{
+				var secVal = $(this).html();
+				if ( $(this).parent().attr('class')== 'checkbox')
+				{ //多选
+			console.log( '1 '+$(this).html() );
+			console.log( 'A ' + $(this).children('i').attr('class') );
+					if( $(this).children('i').attr('class') == 'fa fa-angle-left'){
+						console.log('I am <');
+						$(this).parent().siblings().css('margin-left','0');//返回主页
+						var tmp = $(this); //延时删除
+						setTimeout(function() {
+							tmp.parent().insertAfter( liTag.children('div'));
+						},500)
+					}else if( $(this).children('i').attr('class') == 'fa fa-check'){
+						console.log('I am X');
+						$(this).children('.fa-check').remove();
+					}else{
+						console.log('I am V');
+						$(this).append('<i class="fa fa-check"></i>');
+					}
+
+				}else {//单选
+					liTag.find('em').html( secVal ); //设置选中值
+
+					//选中项添加i标签
+					$(this).parent().find('i').remove();
+					$(this).append('<i class="fa fa-check"></i>');
+					$(this).parent().siblings().css('margin-left','0');//返回主页
+
+					var tmp = $(this); //延时删除
+					setTimeout(function() {
+						tmp.parent().insertAfter( liTag.children('div'));
+					},500)
+				}
+
+			})
+		})
+
+
+	})
+</script>
+</head>
+<body>
+
+
+<div class="test">
+	<section>
+		<ul>
+
+			<li>
+				<div class="be-border-b"> 
+					<span>radio list</span>
+					<label>
+						<em>seclect</em>
+						<i class="fa fa-angle-right"></i>
+					</label>
+				</div>
+				<ol class="radio">
+					<li class="be-border-b">1</li>
+					<li class="be-border-b">2</li>
+					<li class="be-border-b">3</li>
+				</ol>
+			</li>
+
+			<li>
+				<div class="be-border-b"> 
+					<span class="returnName">checkbox list</span>
+					<label>
+						<i class="fa fa-angle-right"></i>
+					</label>
+				</div>
+				<ol class="checkbox">
+					<li class="be-border-b">one</li>
+					<li class="be-border-b">two</li>
+				</ol>
+			</li>
+
+		</ul>
+	</section>
+</div>
+
+</body>
+</html>

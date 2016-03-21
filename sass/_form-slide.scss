@@ -1,26 +1,83 @@
-.be-form-multi{
-	transition:.3s ease-in;
-	section{
-		position:absolute;
-		display:none;
-		left:100%;
-		top:1.5rem;
-		width:100%;
-		background-color:#fff;
+.be-form-slider{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+
+	li{
+		background-color: #fff;
+		width: 95%;
+		padding-left: 5%;
+		&>div{
+			width: 95%;
+			height:2.5rem;
+			line-height: 2.5rem;
+			padding: .2rem 5% .2rem 0;
+		}
 	}
-	ul{
-		width:100%;
+
+	&>section{
+		height: 100%;
+		width: 200%;
+	}
+
+	section>ul,
+	section>ol{
+		display: block;
+		width: 50%;
+		height: 100%;
+		float:left;
+		transition:.5s;
+	}
+
+	section>ul{
 		li{
-			margin-left:5%;
-			width:90%;
-			padding:.7rem 5% .7rem 0;
-			i{
-				float:right;
-				color:#3af;
+			span>span{
+				margin: -.2rem .3rem 0 0;
+			}
+
+			label{
+				float: right;
+				color: #666;
+			}
+			label input{
+				border:none;
+				text-align: right;
+			}
+			label i{
 			}
 		}
-		&>li:last-child{
+		li:last-child>div{
 			border-bottom:none;
 		}
+
+		&>div{
+				margin-top:-.5px;
+		}
+
 	}
+
+	section>ol{
+		li{
+			padding: .2rem 5%;
+			height:2.5rem;
+			line-height: 2.5rem;
+		}
+		li>.fa-check{
+			float:right;
+			margin-right: 5%;
+			height:2.5rem;
+			line-height: 2.5rem;
+			color:#3af;
+		}
+		li>.fa-angle-left{
+			margin-right: .5rem;
+		}
+	}
+
+	.button{
+		margin-top: 1.5rem;
+		text-align: center;
+		color: #666;
+	}
+
 }

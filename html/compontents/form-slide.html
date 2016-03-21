@@ -5,30 +5,50 @@
 <link rel="stylesheet" href="/public/font-awesome-4.4.0/css/font-awesome.min.css">
 <script type="text/javascript" src="/public/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="/public/public.js"></script>
+<script type="text/javascript" src="/public/form-slider.js"> </script>
+<script>
+ $(function(){
+
+	setList({ 'id': 'one',
+			'type':'radio',
+			'icon':'check',
+			'color':'#fa0',
+			'title':'setTitle',
+			'list':['one','two','three','four'],
+		});
+
+	setList({ 'id': 'two',
+			'type':'checkbox',
+			'icon':'check',
+			'color':'#f00',
+			'title':'setTitle',
+			'list':['one','two','three','four'],
+		});
+
+	setList({ 'id': 'input',
+			'type':'input',
+			'icon':'check',
+			'color':'#3af',
+			'title':'inputSth',
+			'holder':'input text',
+		});
+
+ })
+</script>
 </head>
 <body>
 
-	<ul class="be-form-multi be-border-tb">
-		<li>
-			<div class="be-border-b">
-                <span>list</span>
-                <div>
-					select<i class="fa fa-angle-right fa-fx"></i>
-				</div>
-			</div>
-			<section>
-			<h5 class="be-title be-border-t">
-				<i class="fa fa-minus fa-fx fa-rotate-90"></i>
-				This is a tittle
-			</h5>
-			<ul class="be-border-tb">
-				<li class="be-border-b">list-one</li>  
-				<li class="be-border-b">list-two</li>
-				<li class="be-border-b">list-three</li>
-			</ul>
-			</section>
-		</li>
-	</ul>
+
+<div class="be-form-slider">
+	<section>
+		<ul class="be-border-b">
+			<li id="one"></li>
+			<li id="two"></li>
+			<div class="be-border-tb">&nbsp;</div>
+			<li id="input"></li>
+		</ul>
+	</section>
+</div>
 
 </body>
 </html>
