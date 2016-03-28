@@ -1,6 +1,38 @@
 //=========================== 设置  ===================================
-//设置html
-function setList( obj){
+function addList(  id, obj){
+	$('ul').append( '<li id="'+id+'"> </li>');
+	setList( id, obj );
+}
+
+//设置按钮
+function addBtn( obj ){
+	var count =0;
+	var str =  '';
+	for( var eq in obj){
+		count ++;
+		str += '<button class="be-btn-'+obj[eq].kind
+			+'" onClick="window.location.href=\''+ obj[eq].href+ '\'">'
+				+'<i class="fa fa-'+ obj[eq].icon+' fa-lg"> </i> ' + eq
+			+'</button>'
+	}
+	str = ' <div class="be-btn be-col-'+count + '"> ' + str + '</div>';
+	$('ul').append( str);
+}
+
+function addRemark( txt ){
+	$('ul').append( ' <div class="be-border-tb">'+txt+'</div>');
+}
+
+function addBlank(){
+	$('ul').append( ' <div class="be-border-tb">&nbsp;</div>');
+}
+
+function addBlankT(){
+	$('ul').append( ' <div class="be-border-t">&nbsp;</div>');
+}
+
+//设置list
+function setList( id, obj){
 	block='<div class="be-border-b"> '
 			+ '<span> <span class="fa-stack"> '
 			+ '<i class="fa fa-square fa-stack-2x" style="color:'+obj.color+'"></i> '
@@ -8,13 +40,21 @@ function setList( obj){
 			+ '</span>' + obj.title + '</span> '
 			+ '<label> ';
 
-	if( obj.type != 'input' ){
-		block += '<i class="fa fa-angle-right"></i></label></div>';
-		$('#'+ obj.id).append( block );
-		beClick( '#'+ obj.id, obj.type, obj.list );
-	}else{
+	if( obj.type == 'input' ){
 		block += '<input type="text" placeholder='+obj.holder + '></label></div>';
-		$('#'+ obj.id).append( block );
+		$('#'+ id).append( block );
+	}else if( obj.type == 'switch' ){
+		block += '<button class="be-switch be-turn-on"><em></em></button>'
+		$('#'+ id).append( block );
+		switchClick( $('#'+ id).find('button') );
+	}else if( obj.type == 'textarea' ){
+		block = '<textarea placeholder="'+obj.holder+'"></textarea>';
+		$('#'+ id).append( block );
+		textareaChange( $('#' + id).children('textarea') );
+	}else{
+		block += '<i class="fa fa-angle-right"></i></label></div>';
+		$('#'+ id).append( block );
+		beClick( '#'+ id, obj.type, obj.list );
 	}
 
 }
@@ -32,6 +72,27 @@ function beClick( obj, kinds, val){
 		}
 	})
 }
+
+//获取文本域
+function textareaChange( obj){
+	obj.blur(function(){
+		vals[ obj.parent().attr('id') ] = obj.val();
+	})
+}
+
+//开关
+function switchClick(obj){
+	obj.click(function(){
+		if( obj.attr('class') == 'be-switch be-turn-off' ) { 
+			obj.removeClass().addClass('be-switch be-turn-on');
+			vals[obj.parents('li').attr('id')] = true;
+		} else{
+			obj.removeClass().addClass('be-switch be-turn-off');
+			vals[obj.parents('li').attr('id')] = false;
+		}
+	})  
+}
+
 
 //多选方法
 function checkboxClick( obj, initItems ){
@@ -102,7 +163,7 @@ function checkboxInit( items, arr ){
 		}
 	}
 	lineBlk += '<li class="button be-border-tb">';
-	lineBlk += '<i class="fa fa-angle-left"></i> back </li>'
+	lineBlk += '<i class="fa fa-angle-left"></i> 确定 </li>'
 	lineBlk = '<ol>' + lineBlk + '</ol>';
 	return lineBlk;
 }
@@ -154,4 +215,14 @@ function radioMark( obj, selectedVal, chObj ){
 	};
 	return selectedVal;
 }
+
+//输出对象
+function writeObj(obj){ 
+	var description = ""; 
+	for(var i in obj){   
+			var property=obj[i];   
+			description+=i+" = "+property+"\n";  
+		}   
+	alert(description); 
+} 
 

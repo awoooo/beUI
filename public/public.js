@@ -1,9 +1,24 @@
 $(function(){
-	/* 公共头部菜单开始 */
-	$('.be-header > i:last').click(function(){
-		$(this).siblings('ol').slideToggle();
+
+	/* 评星函数开始 */
+	$('.be-comment span i').click(function(){
+		var span = $(this).parent();
+		var count = span.find('.fa-star').size();
+		if( $(this).attr('class') == 'fa fa-star-o'){
+			for(var i=0; i<$(this).index()+1; i++){
+				span.children('i').eq(i).removeClass().addClass('fa fa-star');
+			}
+		}else{
+			if( span.find('.fa-star').size() > $(this).index() && count !=1 ){
+				for(var i=5; i>$(this).index(); i--){
+					span.children('i').eq(i).removeClass().addClass('fa fa-star-o');
+				}
+			}else{
+				span.find('i').removeClass().addClass('fa fa-star-o');
+			}
+		}
 	});
-	/* 公共头部菜单结束 */
+	/* 评星函数结束 */
 
 	/* 公共开关控制开始 */
 	$('.be-switch').click(function(){
@@ -24,6 +39,8 @@ $(function(){
 	$('div[data-href]').click(function(){
 		window.location.href =  $(this).attr('data-href') ; })
 	$('i[data-href]').click(function(){
+		window.location.href =  $(this).attr('data-href') ; })
+	$('button[data-href]').click(function(){
 		window.location.href =  $(this).attr('data-href') ; })
 	/* 打开超链接结束 */
 
@@ -139,47 +156,75 @@ function alertList(className){
 
 /*滑块控制函数 */
 function rangeTouch( idName){
-		if(('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch){
- 
-		document.getElementById(idName).addEventListener('touchstart', function(event){
-			event.preventDefault();
-			startX = event.touches[0].clientX;
-		
-		}, false);
-		document.getElementById(idName).addEventListener('touchmove', function(event){
-			event.preventDefault();
-			endX = event.touches[0].clientX;
+	if(('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch){
 
-			var screenW = $(window).width();//get screen width;
-			var barW = $('#'+idName).siblings('span').width();// get line width;
-			var startPoint = (screenW - barW )/2;
+	document.getElementById(idName).addEventListener('touchstart', function(event){
+		event.preventDefault();
+		startX = event.touches[0].clientX;
+	
+	}, false);
+	document.getElementById(idName).addEventListener('touchmove', function(event){
+		event.preventDefault();
+		endX = event.touches[0].clientX;
 
-			var precent = parseInt( (endX - startPoint) / barW * 100 ) + 1;
+		var screenW = $(window).width();//get screen width;
+		var barW = $('#'+idName).siblings('span').width();// get line width;
+		var startPoint = (screenW - barW )/2;
 
-			//控制滑块动作
-			if( ( endX < startPoint + barW) && (endX > startPoint) ){
-				$('#' + idName).siblings('label').css({'width':endX - startPoint});
-				$('#' + idName).css({'margin-left':endX - startPoint});
-				//控制数字变化
-				$('#'+ idName).parent().siblings('span:first').children('p').html(precent);
-			} else if (endX <= startPoint){ } else{  }
+		var precent = parseInt( (endX - startPoint) / barW * 100 ) + 1;
 
-		}, false);
-		document.getElementById(idName).addEventListener('touchend', function(event){
-		}, false);
-		}
+		//控制滑块动作
+		if( ( endX < startPoint + barW) && (endX > startPoint) ){
+			$('#' + idName).siblings('label').css({'width':endX - startPoint});
+			$('#' + idName).css({'margin-left':endX - startPoint});
+			//控制数字变化
+			$('#'+ idName).parent().siblings('span:first').children('p').html(precent);
+		} else if (endX <= startPoint){ } else{  }
+
+	}, false);
+	document.getElementById(idName).addEventListener('touchend', function(event){
+	}, false);
 	}
+}
 
 
 /*搜索框分类选择函数 */
-	function slideMenu( className ){
-		$(className).children('label:first').click(function(){
-			if( $(this).find('ul').css('display') == 'none') {
-				$(this).find('ul').show();
-				$(this).find('li').click(function(){
-					$(this).parent().siblings('em').html( $(this).html() );
-				});
-			} else { $(this).find('ul').hide(); }
-		});
+function slideMenu( className ){
+	$(className).children('label:first').click(function(){
+		if( $(this).find('ul').css('display') == 'none') {
+			$(this).find('ul').show();
+			$(this).find('li').click(function(){
+				$(this).parent().siblings('em').html( $(this).html() );
+			});
+		} else { $(this).find('ul').hide(); }
+	});
+}
+
+/*加载头部函数 */
+function getHeader( obj ){
+	var str = '<header class="be-header">'
+	+'<i class="fa fa-home fa-lg" data-href="/index.html"></i>'
+	+'<i class="fa fa-bars fa-lg"></i>'
+	+'<span><h1>' + obj.title + '</h1> </span>'
+	+'<ol>';
+
+	for( var i=0; i<obj.menu.length; i++){
+		str += '<li data-href="'+ obj.menu[i].href + '">'+obj.menu[i].text 
+		str	+= ' <i class="fa fa-'+obj.menu[i].icon +' fa-lg"></i></li>'
 	}
+	str += '</ol> </header>'
+	str += '<div class="be-header-placeholder">&nbsp;</div>';
+	$('body').prepend( str );
+
+	$('li[data-href]').click(function(){
+		window.location.href =  $(this).attr('data-href') ; });
+
+	$('i[data-href]').click(function(){
+		window.location.href =  $(this).attr('data-href') ; });
+
+	$('.be-header > i:last').click(function(){
+		$(this).siblings('ol').slideToggle();
+	});
+}
+
 

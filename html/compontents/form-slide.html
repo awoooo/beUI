@@ -9,28 +9,56 @@
 <script>
  $(function(){
 
-	setList({ 'id': 'one',
-			'type':'radio',
-			'icon':'check',
-			'color':'#fa0',
-			'title':'setTitle',
-			'list':['one','two','three','four'],
-		});
+	addList('input', {
+		'type':'input',
+		'icon':'user',
+		'color':'#fa0',
+		'title':'please',
+		'holder':'holdertxt',
+	});
 
-	setList({ 'id': 'two',
-			'type':'checkbox',
-			'icon':'check',
-			'color':'#f00',
-			'title':'setTitle',
-			'list':['one','two','three','four'],
-		});
+	addList('radioId', {
+		'type':'radio',
+		'icon':'mars',
+		'color':'#f00',
+		'title':'raido',
+		'list': ['one','two'],
+	});
 
-	setList({ 'id': 'input',
-			'type':'input',
-			'icon':'check',
-			'color':'#3af',
-			'title':'inputSth',
-			'holder':'input text',
+
+	addList('checkboxId', {
+		'type':'checkbox',
+		'icon':'mars',
+		'color':'#f00',
+		'title':'raido',
+		'list': ['one','two'],
+	});
+
+
+	addRemark('Remarks');
+
+	addList('switchId', {
+		'type':'switch',
+		'icon':'user-secret',
+		'color':'#396',
+		'title':'set title',
+	});
+
+	addList('textareaId', {
+		'type':'textarea',
+		'holder': 'Remarkes',
+	});
+
+
+
+	addBlankT();
+
+	addBtn({
+		'submit':{
+		'kind':'unactived',
+		'icon':'check',
+		'href':'customer-r-info.html'
+		},
 		});
 
  })
@@ -38,16 +66,8 @@
 </head>
 <body>
 
-
 <div class="be-form-slider">
-	<section>
-		<ul class="be-border-b">
-			<li id="one"></li>
-			<li id="two"></li>
-			<div class="be-border-tb">&nbsp;</div>
-			<li id="input"></li>
-		</ul>
-	</section>
+	<section> <ul> </ul> </section>
 </div>
 
 </body>

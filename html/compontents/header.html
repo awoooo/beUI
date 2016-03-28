@@ -12,22 +12,21 @@
 <script type="text/javascript" src="/public/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="/public/public.js"></script>
 
+<script>
+
+	$(function(){
+	getHeader({
+		'title':'快佣宝',
+		'menu':[ 
+			{'text':'回到顶部', 'icon':'anchor', 'href':'#'}, 
+		]
+	});
+
+})
+</script>
+
 </head>
 <body>
-	
-	<header class="be-header">
-		<i class="fa fa-home fa-lg" data-href="/index.html"></i>
-		<i class="fa fa-bars fa-lg"></i>
-		<span><h1>当前页标题</h1> </span>
-		<ol>
-			<li data-href="#">时间排序 <i class="fa fa-sort fa-lg"></i></li>
-			<li data-href="#">回到顶部 <i class="fa fa-anchor fa-lg"></i></li>
-		</ol>
-	</header>
-	<div class="be-header-placeholder">&nbsp;</div>
-
-	header>(i.fa.fa-home.fa-lg[data-href=index.html]+i.fa.fa-bars.fa-lg+(span>h1{title})+(ol>li[data-href=#]{回到顶部}>i.fa.fa-anchor.fa-lg))^div.be-header-placeholder{&nbsp}
-
 	
 </body>
 </html>

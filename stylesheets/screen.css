@@ -1369,21 +1369,38 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
   border: none;
   text-align: right;
 }
+/* line 46, ../sass/_form-slide.scss */
+.be-form-slider section > ul li button {
+  margin-top: .35rem;
+}
 /* line 49, ../sass/_form-slide.scss */
+.be-form-slider section > ul li textarea {
+  width: 95%;
+  height: 5.5rem;
+  padding: .5rem 0;
+  border: none;
+  resize: none;
+  overflow: hidden;
+}
+/* line 61, ../sass/_form-slide.scss */
 .be-form-slider section > ul li:last-child > div {
   border-bottom: none;
 }
-/* line 53, ../sass/_form-slide.scss */
+/* line 65, ../sass/_form-slide.scss */
 .be-form-slider section > ul > div {
+  width: 90%;
+  padding: .6rem 5% .4rem 5%;
   margin-top: -.5px;
+  color: #888;
+  font-size: .8rem;
 }
-/* line 60, ../sass/_form-slide.scss */
+/* line 76, ../sass/_form-slide.scss */
 .be-form-slider section > ol li {
   padding: .2rem 5%;
   height: 2.5rem;
   line-height: 2.5rem;
 }
-/* line 65, ../sass/_form-slide.scss */
+/* line 81, ../sass/_form-slide.scss */
 .be-form-slider section > ol li > .fa-check {
   float: right;
   margin-right: 5%;
@@ -1391,11 +1408,11 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
   line-height: 2.5rem;
   color: #3af;
 }
-/* line 72, ../sass/_form-slide.scss */
+/* line 88, ../sass/_form-slide.scss */
 .be-form-slider section > ol li > .fa-angle-left {
   margin-right: .5rem;
 }
-/* line 77, ../sass/_form-slide.scss */
+/* line 93, ../sass/_form-slide.scss */
 .be-form-slider .button {
   margin-top: 1.5rem;
   text-align: center;
