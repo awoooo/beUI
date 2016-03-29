@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$txt-link".
-        on line 7 of /home/awoo/beUI/sass/base/type.scss
+        on line 7 of /home/awoo/git/beUI/sass/base/type.scss
 
 2: 
 3:     "../base/mixin",
@@ -15,7 +15,7 @@ Error: Undefined variable: "$txt-link".
 12: ::-webkit-input-placeholder {
 
 Backtrace:
-/home/awoo/beUI/sass/base/type.scss:7
+/home/awoo/git/beUI/sass/base/type.scss:7
 /usr/lib/ruby/vendor_ruby/sass/script/tree/variable.rb:49:in `_perform'
 /usr/lib/ruby/vendor_ruby/sass/script/tree/node.rb:50:in `perform'
 /usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:394:in `visit_prop'
@@ -73,4 +73,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$txt-link\".\A         on line 7 of /home/awoo/beUI/sass/base/type.scss\A \A 2: \A 3:     \"../base/mixin\",\A 4:     \"../base/variable\";\A 5:     \A 6: a{\A 7:     color: $txt-link;  \A 8: }\A 9: em{\A 10:     color: $txt-highlight;\A 11: }\A 12: ::-webkit-input-placeholder {"; }
+  content: "Error: Undefined variable: \"$txt-link\".\A         on line 7 of /home/awoo/git/beUI/sass/base/type.scss\A \A 2: \A 3:     \"../base/mixin\",\A 4:     \"../base/variable\";\A 5:     \A 6: a{\A 7:     color: $txt-link;  \A 8: }\A 9: em{\A 10:     color: $txt-highlight;\A 11: }\A 12: ::-webkit-input-placeholder {"; }

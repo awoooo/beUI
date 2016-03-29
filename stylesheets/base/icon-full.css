@@ -1,7 +1,7 @@
 /*
 Error: Undefined variable: "$line-height-bar".
-        on line 46 of /home/awoo/beUI/sass/base/mixin.scss, in `icon'
-        from line 11 of /home/awoo/beUI/sass/base/icon-full.scss
+        on line 46 of /home/awoo/git/beUI/sass/base/mixin.scss, in `icon'
+        from line 11 of /home/awoo/git/beUI/sass/base/icon-full.scss
 
 41: .ui-icon-cart:before { content: "\f620"; }
 42: .ui-icon-history:before { content: "\f621"; }
@@ -16,8 +16,8 @@ Error: Undefined variable: "$line-height-bar".
 51: .ui-icon-share:before { content: "\f62a"; }
 
 Backtrace:
-/home/awoo/beUI/sass/base/mixin.scss:46:in `icon'
-/home/awoo/beUI/sass/base/icon-full.scss:11
+/home/awoo/git/beUI/sass/base/mixin.scss:46:in `icon'
+/home/awoo/git/beUI/sass/base/icon-full.scss:11
 /usr/lib/ruby/vendor_ruby/sass/script/tree/variable.rb:49:in `_perform'
 /usr/lib/ruby/vendor_ruby/sass/script/tree/node.rb:50:in `perform'
 /usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:394:in `visit_prop'
@@ -92,4 +92,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$line-height-bar\".\A         on line 46 of /home/awoo/beUI/sass/base/mixin.scss, in `icon'\A         from line 11 of /home/awoo/beUI/sass/base/icon-full.scss\A \A 41: .ui-icon-cart:before { content: \"\f620\"; }\A 42: .ui-icon-history:before { content: \"\f621\"; }\A 43: .ui-icon-wallet:before { content: \"\f622\"; }\A 44: .ui-icon-refresh:before { content: \"\f623\"; }\A 45: .ui-icon-thumb:before { content: \"\f624\"; }\A 46: .ui-icon-file:before { content: \"\f625\"; }\A 47: .ui-icon-hall:before { content: \"\f626\"; }\A 48: .ui-icon-voice:before { content: \"\f627\"; }\A 49: .ui-icon-unfold:before { content: \"\f628\"; }\A 50: .ui-icon-gototop:before { content: \"\f629\"; }\A 51: .ui-icon-share:before { content: \"\f62a\"; }"; }
+  content: "Error: Undefined variable: \"$line-height-bar\".\A         on line 46 of /home/awoo/git/beUI/sass/base/mixin.scss, in `icon'\A         from line 11 of /home/awoo/git/beUI/sass/base/icon-full.scss\A \A 41: .ui-icon-cart:before { content: \"\f620\"; }\A 42: .ui-icon-history:before { content: \"\f621\"; }\A 43: .ui-icon-wallet:before { content: \"\f622\"; }\A 44: .ui-icon-refresh:before { content: \"\f623\"; }\A 45: .ui-icon-thumb:before { content: \"\f624\"; }\A 46: .ui-icon-file:before { content: \"\f625\"; }\A 47: .ui-icon-hall:before { content: \"\f626\"; }\A 48: .ui-icon-voice:before { content: \"\f627\"; }\A 49: .ui-icon-unfold:before { content: \"\f628\"; }\A 50: .ui-icon-gototop:before { content: \"\f629\"; }\A 51: .ui-icon-share:before { content: \"\f62a\"; }"; }

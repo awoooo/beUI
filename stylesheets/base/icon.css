@@ -1,11 +1,11 @@
 /*
 Error: Undefined variable: "$line-height-bar".
-        on line 46 of /home/awoo/beUI/sass/base/mixin.scss, in `icon'
-        from line 10 of /home/awoo/beUI/sass/base/icon.scss
+        on line 46 of /home/awoo/git/beUI/sass/base/mixin.scss, in `icon'
+        from line 10 of /home/awoo/git/beUI/sass/base/icon.scss
 
 Backtrace:
-/home/awoo/beUI/sass/base/mixin.scss:46:in `icon'
-/home/awoo/beUI/sass/base/icon.scss:10
+/home/awoo/git/beUI/sass/base/mixin.scss:46:in `icon'
+/home/awoo/git/beUI/sass/base/icon.scss:10
 /usr/lib/ruby/vendor_ruby/sass/script/tree/variable.rb:49:in `_perform'
 /usr/lib/ruby/vendor_ruby/sass/script/tree/node.rb:50:in `perform'
 /usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:394:in `visit_prop'
@@ -80,4 +80,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$line-height-bar\".\A         on line 46 of /home/awoo/beUI/sass/base/mixin.scss, in `icon'\A         from line 10 of /home/awoo/beUI/sass/base/icon.scss"; }
+  content: "Error: Undefined variable: \"$line-height-bar\".\A         on line 46 of /home/awoo/git/beUI/sass/base/mixin.scss, in `icon'\A         from line 10 of /home/awoo/git/beUI/sass/base/icon.scss"; }

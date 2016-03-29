@@ -1,5 +1,7 @@
 $(function(){
 
+	function(){}
+
 	/* 评星函数开始 */
 	$('.be-comment span i').click(function(){
 		var span = $(this).parent();

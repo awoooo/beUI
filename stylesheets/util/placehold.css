@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$txt-muted".
-        on line 10 of /home/awoo/beUI/sass/util/placehold.scss
+        on line 10 of /home/awoo/git/beUI/sass/util/placehold.scss
 
 5: .ui-placehold-wrap{
 6:     padding-top: 31.25%;
@@ -15,7 +15,7 @@ Error: Undefined variable: "$txt-muted".
 15:     -webkit-box-orient: vertical;
 
 Backtrace:
-/home/awoo/beUI/sass/util/placehold.scss:10
+/home/awoo/git/beUI/sass/util/placehold.scss:10
 /usr/lib/ruby/vendor_ruby/sass/script/tree/variable.rb:49:in `_perform'
 /usr/lib/ruby/vendor_ruby/sass/script/tree/node.rb:50:in `perform'
 /usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:394:in `visit_prop'
@@ -73,4 +73,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$txt-muted\".\A         on line 10 of /home/awoo/beUI/sass/util/placehold.scss\A \A 5: .ui-placehold-wrap{\A 6:     padding-top: 31.25%;\A 7:     position: relative;\A 8: }\A 9: .ui-placehold{\A 10:     color: $txt-muted;\A 11:     position: absolute;\A 12:     top: 0;\A 13:     width: 100%;\A 14:     display: -webkit-box;\A 15:     -webkit-box-orient: vertical;"; }
+  content: "Error: Undefined variable: \"$txt-muted\".\A         on line 10 of /home/awoo/git/beUI/sass/util/placehold.scss\A \A 5: .ui-placehold-wrap{\A 6:     padding-top: 31.25%;\A 7:     position: relative;\A 8: }\A 9: .ui-placehold{\A 10:     color: $txt-muted;\A 11:     position: absolute;\A 12:     top: 0;\A 13:     width: 100%;\A 14:     display: -webkit-box;\A 15:     -webkit-box-orient: vertical;"; }

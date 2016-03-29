@@ -1,0 +1,29 @@
+.be-case{
+	float:left;
+	width:92%;
+	padding:.8rem 4%;
+	background-color:$white;
+
+	img{
+		float:left;
+		width:4rem;
+		height:4rem;
+		margin-right: 1rem;
+		border-radius:.3rem;
+	}
+
+	h5{
+		font-size:1rem;
+		margin-bottom: .3rem;
+	}
+
+	p,a{
+		font-size:.8rem;
+		color:#888;
+		line-height: 1.2rem;
+	}
+	i{
+		margin-right: .3rem;
+	}
+
+}

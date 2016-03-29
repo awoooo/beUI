@@ -1,0 +1,38 @@
+.be-comment{
+	li {
+	  clear: both;
+	  background-color: #fff;
+	}
+
+	div {
+	  margin-left: 5%;
+	  padding: .7rem 0;
+	}
+
+	li:last-child div {
+	  border: none;
+	}
+
+	div > span {
+	  float: right;
+	  padding-right: 5%;
+	}
+
+	div > span i {
+	  margin-left: 1rem;
+	  color: #aaa;
+	}
+
+	.fa-star {
+	  color: #e52;
+	}
+
+	textarea {
+	  width: 90%;
+	  padding: .5rem 5%;
+	  resize: none;
+	  overflow: hidden;
+	  border: none;
+	}
+
+}

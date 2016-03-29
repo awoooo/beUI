@@ -555,7 +555,7 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 2.5rem;
   padding: 0.5rem 0;
-  background: #396;
+  background: #520;
 }
 /* line 15, ../sass/_header.scss */
 .be-header span {
@@ -581,7 +581,7 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
   line-height: 2.5rem;
   text-align: center;
   color: #fff;
-  background: #40bf80;
+  background: #883600;
   border-radius: 0.3rem;
 }
 /* line 41, ../sass/_header.scss */
@@ -614,8 +614,8 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
   height: 2.5rem;
   line-height: 2.5rem;
   color: #fff;
-  background-color: rgba(51, 153, 102, 0.9);
-  border-top: 1px solid #26734d;
+  background-color: rgba(85, 34, 0, 0.9);
+  border-top: 1px solid #220e00;
 }
 /* line 71, ../sass/_header.scss */
 .be-header ol li i {
@@ -624,7 +624,7 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
 }
 /* line 76, ../sass/_header.scss */
 .be-header ol li:last-child {
-  border-bottom: 1px solid #26734d;
+  border-bottom: 1px solid #220e00;
 }
 
 /* line 1, ../sass/_personal-header.scss */
@@ -671,6 +671,37 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
   color: #888;
 }
 
+/* line 1, ../sass/_case-header.scss */
+.be-case {
+  float: left;
+  width: 92%;
+  padding: .8rem 4%;
+  background-color: #fff;
+}
+/* line 7, ../sass/_case-header.scss */
+.be-case img {
+  float: left;
+  width: 4rem;
+  height: 4rem;
+  margin-right: 1rem;
+  border-radius: .3rem;
+}
+/* line 15, ../sass/_case-header.scss */
+.be-case h5 {
+  font-size: 1rem;
+  margin-bottom: .3rem;
+}
+/* line 20, ../sass/_case-header.scss */
+.be-case p, .be-case a {
+  font-size: .8rem;
+  color: #888;
+  line-height: 1.2rem;
+}
+/* line 25, ../sass/_case-header.scss */
+.be-case i {
+  margin-right: .3rem;
+}
+
 /* line 1, ../sass/_sumary.scss */
 .be-sumary {
   float: left;
@@ -699,7 +730,7 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
   font-size: 1rem;
   font-style: normal;
   font-weight: bold;
-  color: #396;
+  color: #520;
 }
 /* line 28, ../sass/_sumary.scss */
 .be-sumary span {
@@ -759,12 +790,12 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
 
 /* line 44, ../sass/_search.scss */
 .search-dark {
-  background-color: #396;
+  background-color: #520;
 }
 /* line 46, ../sass/_search.scss */
 .search-dark input, .search-dark i {
   color: #fff;
-  background-color: #40bf80;
+  background-color: #883600;
 }
 
 /* line 4, ../sass/_search-list.scss */
@@ -904,8 +935,8 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
   line-height: 2rem;
   text-align: center;
   color: #fff;
-  border: 1px solid #396;
-  background-color: #396;
+  border: 1px solid #520;
+  background-color: #520;
 }
 /* line 135, ../sass/_search-list.scss */
 .be-search-list-func div {
@@ -973,12 +1004,12 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
 
 /* line 197, ../sass/_search-list.scss */
 .search-dark {
-  background-color: #396;
+  background-color: #520;
 }
 /* line 199, ../sass/_search-list.scss */
 .search-dark input {
   color: #fff;
-  background-color: #40bf80;
+  background-color: #883600;
 }
 
 /* line 1, ../sass/_footer.scss */
@@ -1008,7 +1039,7 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
 }
 /* line 22, ../sass/_footer.scss */
 .be-footer .active {
-  color: #396;
+  color: #520;
 }
 /* line 25, ../sass/_footer.scss */
 .be-footer li:active {
@@ -1113,29 +1144,40 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
 .be-list li > div span {
   display: block;
 }
-/* line 50, ../sass/_be-list.scss */
+/* line 49, ../sass/_be-list.scss */
+.be-list li > small {
+  display: block;
+  color: #888;
+  line-height: 1.2rem;
+  padding: .8rem 5% .8rem 0;
+}
+/* line 56, ../sass/_be-list.scss */
 .be-list h5 {
   font-weight: normal;
   font-size: 1rem;
   margin-bottom: .3rem;
 }
-/* line 54, ../sass/_be-list.scss */
+/* line 60, ../sass/_be-list.scss */
 .be-list h5 small {
   margin-left: .3rem;
   color: gray;
 }
-/* line 58, ../sass/_be-list.scss */
+/* line 64, ../sass/_be-list.scss */
 .be-list h5 i {
   margin-left: .3rem;
 }
-/* line 61, ../sass/_be-list.scss */
+/* line 67, ../sass/_be-list.scss */
 .be-list h5 em {
   font-size: .8rem;
   font-style: normal;
   float: right;
   color: gray;
 }
-/* line 68, ../sass/_be-list.scss */
+/* line 73, ../sass/_be-list.scss */
+.be-list h5 a {
+  color: gray;
+}
+/* line 77, ../sass/_be-list.scss */
 .be-list p {
   font-size: .8rem;
   color: gray;
@@ -1143,31 +1185,31 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-/* line 74, ../sass/_be-list.scss */
+/* line 83, ../sass/_be-list.scss */
 .be-list p em {
   font-style: normal;
   float: right;
 }
-/* line 78, ../sass/_be-list.scss */
+/* line 87, ../sass/_be-list.scss */
 .be-list p i {
   margin-right: .3rem;
 }
-/* line 81, ../sass/_be-list.scss */
+/* line 90, ../sass/_be-list.scss */
 .be-list p a {
   color: gray;
 }
-/* line 87, ../sass/_be-list.scss */
+/* line 96, ../sass/_be-list.scss */
 .be-list label {
   float: right;
   width: 3rem;
   text-align: right;
   color: #666;
 }
-/* line 92, ../sass/_be-list.scss */
+/* line 101, ../sass/_be-list.scss */
 .be-list label i {
   line-height: 2.5rem;
 }
-/* line 96, ../sass/_be-list.scss */
+/* line 105, ../sass/_be-list.scss */
 .be-list .fa-color-green {
   color: green;
 }
@@ -1432,7 +1474,7 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
   height: 1rem;
   border-radius: 1rem;
   color: #fff;
-  background-color: #396;
+  background-color: #520;
   line-height: 1rem;
   text-align: center;
   font-size: .6rem;
@@ -1519,7 +1561,7 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
   margin-bottom: .2rem;
 }
 /* line 42, ../sass/_detail.scss */
-.be-detail > li > div span {
+.be-detail > li > div > span {
   display: block;
   margin-left: 5rem;
 }
@@ -1530,29 +1572,46 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
   color: #888;
 }
 /* line 51, ../sass/_detail.scss */
+.be-detail > li > div small em {
+  float: right;
+  margin-right: 5%;
+}
+/* line 55, ../sass/_detail.scss */
+.be-detail > li > div i {
+  margin-right: .3rem;
+}
+/* line 58, ../sass/_detail.scss */
 .be-detail > li > div p {
   font-size: .8rem;
   color: #666;
   line-height: 1.3rem;
 }
-/* line 59, ../sass/_detail.scss */
+/* line 66, ../sass/_detail.scss */
 .be-detail ol {
   float: left;
   width: 100%;
   margin: .3rem 0 -.5rem 0;
 }
-/* line 63, ../sass/_detail.scss */
+/* line 70, ../sass/_detail.scss */
 .be-detail ol li {
   float: left;
   padding: .3rem 0;
-  color: #396;
+  color: #520;
 }
-/* line 71, ../sass/_detail.scss */
+/* line 75, ../sass/_detail.scss */
+.be-detail ol i {
+  margin-right: .3rem;
+}
+/* line 78, ../sass/_detail.scss */
+.be-detail ol span {
+  color: #666;
+}
+/* line 84, ../sass/_detail.scss */
 .be-detail .fa-minus {
-  color: #396;
+  color: #520;
 }
 
-/* line 77, ../sass/_detail.scss */
+/* line 90, ../sass/_detail.scss */
 .detail-content {
   font-size: .9rem;
   line-height: 1.5rem;
@@ -1563,13 +1622,50 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
   border-bottom: 1px solid #ccc;
 }
 
-/* line 87, ../sass/_detail.scss */
+/* line 100, ../sass/_detail.scss */
 .common-notes {
   clear: both;
   font-size: .8rem;
   color: gray;
   width: 90%;
   padding: 1.2rem 5% .3rem 5%;
+}
+
+/* line 2, ../sass/_be-comment.scss */
+.be-comment li {
+  clear: both;
+  background-color: #fff;
+}
+/* line 7, ../sass/_be-comment.scss */
+.be-comment div {
+  margin-left: 5%;
+  padding: .7rem 0;
+}
+/* line 12, ../sass/_be-comment.scss */
+.be-comment li:last-child div {
+  border: none;
+}
+/* line 16, ../sass/_be-comment.scss */
+.be-comment div > span {
+  float: right;
+  padding-right: 5%;
+}
+/* line 21, ../sass/_be-comment.scss */
+.be-comment div > span i {
+  margin-left: 1rem;
+  color: #aaa;
+}
+/* line 26, ../sass/_be-comment.scss */
+.be-comment .fa-star {
+  color: #e52;
+}
+/* line 30, ../sass/_be-comment.scss */
+.be-comment textarea {
+  width: 90%;
+  padding: .5rem 5%;
+  resize: none;
+  overflow: hidden;
+  border: none;
 }
 
 /* line 2, ../sass/_cards.scss */
@@ -1721,7 +1817,7 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
   background-color: #fff;
   font-size: 1rem;
   text-align: center;
-  color: #396;
+  color: #520;
 }
 /* line 12, ../sass/_checkbox.scss */
 .common-checkbox li div, .common-checkbox-radio li div {
@@ -1738,7 +1834,7 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
 }
 /* line 25, ../sass/_checkbox.scss */
 .common-checkbox .active, .common-checkbox-radio .active {
-  background-color: #396;
+  background-color: #520;
   color: #fff;
 }
 
@@ -1907,7 +2003,7 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
   float: left;
   padding: .4rem 0;
   font-size: .8rem;
-  color: #396;
+  color: #520;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
 }
@@ -1937,11 +2033,11 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
 }
 /* line 22, ../sass/_tab.scss */
 .be-tab-title .active p {
-  color: #396;
+  color: #520;
 }
 /* line 25, ../sass/_tab.scss */
 .be-tab-title .active span {
-  background-color: #396;
+  background-color: #520;
 }
 /* line 29, ../sass/_tab.scss */
 .be-tab-title a {
@@ -1970,7 +2066,7 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
 }
 /* line 7, ../sass/_title.scss */
 .be-title i {
-  color: #396;
+  color: #520;
 }
 /* line 10, ../sass/_title.scss */
 .be-title span {

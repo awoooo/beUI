@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$wrap-padding".
-        on line 7 of /home/awoo/beUI/sass/util/whitespace.scss
+        on line 7 of /home/awoo/git/beUI/sass/util/whitespace.scss
 
 2: 
 3:     "../base/mixin",
@@ -15,7 +15,7 @@ Error: Undefined variable: "$wrap-padding".
 12:         padding-right: $wrap-padding-s;
 
 Backtrace:
-/home/awoo/beUI/sass/util/whitespace.scss:7
+/home/awoo/git/beUI/sass/util/whitespace.scss:7
 /usr/lib/ruby/vendor_ruby/sass/script/tree/variable.rb:49:in `_perform'
 /usr/lib/ruby/vendor_ruby/sass/script/tree/node.rb:50:in `perform'
 /usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:394:in `visit_prop'
@@ -73,4 +73,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$wrap-padding\".\A         on line 7 of /home/awoo/beUI/sass/util/whitespace.scss\A \A 2: \A 3:     \"../base/mixin\",\A 4:     \"../base/variable\";\A 5: \A 6: .ui-whitespace{\A 7:     padding-left: $wrap-padding;\A 8:     padding-right: $wrap-padding;\A 9:     box-sizing: border-box;\A 10:     @media (max-width: 320px) {\A 11:         padding-left: $wrap-padding-s;\A 12:         padding-right: $wrap-padding-s;"; }
+  content: "Error: Undefined variable: \"$wrap-padding\".\A         on line 7 of /home/awoo/git/beUI/sass/util/whitespace.scss\A \A 2: \A 3:     \"../base/mixin\",\A 4:     \"../base/variable\";\A 5: \A 6: .ui-whitespace{\A 7:     padding-left: $wrap-padding;\A 8:     padding-right: $wrap-padding;\A 9:     box-sizing: border-box;\A 10:     @media (max-width: 320px) {\A 11:         padding-left: $wrap-padding-s;\A 12:         padding-right: $wrap-padding-s;"; }

@@ -39,7 +39,7 @@
 			font-weight:normal;
 			margin-bottom:.2rem;
 		}
-		span{
+		&>span{
 			display:block;
 			margin-left:5rem;
 		}
@@ -47,6 +47,13 @@
 			font-size:.8rem;
 			line-height:1.5rem;
 			color:#888;
+		}
+		small em{
+			float: right;
+			margin-right: 5%;
+		}
+		i{
+			margin-right: .3rem;
 		}
 		p{
 			font-size:.8rem;
@@ -64,6 +71,12 @@
 			float:left;
 			padding:.3rem 0;
 			color:$pro-color;
+		}
+		i{
+			margin-right: .3rem;
+		}
+		span{
+			color: #666;
 		}
 	}
 
