@@ -1,0 +1,42 @@
+	<ul class="be-comment">
+
+		<li>
+			<div class="be-border-b">
+				<label for=""> 
+					ListOne
+				</label>
+				<span> <i class="fa fa-star-o"></i>
+					<i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i>
+					<i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i>
+				</span>
+			</div>
+		</li>
+
+		<li>
+			<div class="be-border-b">
+				<label for=""> 
+					ListTwo
+				</label>
+				<span>
+					<i class="fa fa-star-o"></i>
+					<i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i>
+					<i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i>
+				</span>
+			</div>
+		</li>
+
+		<li>
+			<div class="be-border-b">
+				<label for=""> 
+					ListThree
+				</label>
+				<span> <i class="fa fa-star-o"></i>
+					<i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i>
+					<i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i>
+				</span>
+			</div>
+		</li>
+
+		<li><textarea rows="4" placeholder="SomeRemarks"></textarea></li>
+
+	</ul>

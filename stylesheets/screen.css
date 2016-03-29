@@ -1461,6 +1461,33 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
   color: #666;
 }
 
+/* line 5, ../sass/_be-fold.scss */
+.be-fold > li > h5 + ul {
+  display: none;
+  margin-bottom: -1px;
+}
+/* line 9, ../sass/_be-fold.scss */
+.be-fold > .active > h5 + ul {
+  display: block;
+}
+/* line 12, ../sass/_be-fold.scss */
+.be-fold > li > h5 {
+  display: block;
+  width: 90%;
+  padding: .9rem 5%;
+  background-color: #f6f6f6;
+  border-bottom: none;
+}
+/* line 20, ../sass/_be-fold.scss */
+.be-fold > li > h5 > i {
+  margin-right: .3rem;
+  color: #520;
+}
+/* line 24, ../sass/_be-fold.scss */
+.be-fold > li > h5 > em {
+  float: right;
+}
+
 /* line 1, ../sass/_flow.scss */
 .be-flow {
   width: 100%;

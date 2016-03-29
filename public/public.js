@@ -1,6 +1,22 @@
 $(function(){
-
-	function(){}
+	/* 手风琴折叠开始 */
+	$('.be-fold>li>h5').click(function()
+			{
+				var liTag = $(this).parent();
+				var h5Tag = liTag.siblings().children('h5');
+				var iTag = liTag.children('h5').children('i');
+				$(this).siblings().slideToggle();
+				console.log( iTag.attr('class') == 'fa fa-caret-down');
+				if( iTag.attr('class') == 'fa fa-caret-down')
+				{
+					iTag.removeClass().addClass('fa fa-caret-right');
+				}else{
+					iTag.removeClass().addClass('fa fa-caret-down');
+				}
+				h5Tag.siblings().slideUp();
+				h5Tag.children('i').removeClass().addClass('fa fa-caret-right');
+			});
+	/* 手风琴折叠结束 */
 
 	/* 评星函数开始 */
 	$('.be-comment span i').click(function(){
