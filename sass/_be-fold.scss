@@ -1,5 +1,6 @@
 .be-fold {
 	&>li{
+		clear:both;
 		//border-top: 1px solid #888;
 	}
 	&>li>h5+ul{
@@ -12,16 +13,18 @@
 	&>li>h5{
 		display: block;
 		width: 90%;
-		padding: .9rem 5%;
+		padding: .8rem 5%;
 		background-color: rgb(246, 246,246);
 		border-bottom: none;
 	}
 
 	&>li>h5>i{
+		width: .5rem;
 		margin-right: .3rem;
 		color: $pro-color;
 	}
 	&>li>h5>em{
 		float: right;
+		color: gray;
 	}
 }

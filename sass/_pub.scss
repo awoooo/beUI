@@ -11,6 +11,20 @@ input{
 	height:3rem;
 }
 
+.be-remark {
+	clear:both;
+	padding: .5rem 5%;
+	margin-bottom: .5rem;
+	font-size: .7rem;
+	line-height: 1.2rem;
+	color: gray;
+	a{
+	color: gray;
+	}
+	em{
+		float: right;
+	}
+}
 /*去除标题的加粗样式*/
 h6,h5,h4,h3{
 	font-weight:normal;

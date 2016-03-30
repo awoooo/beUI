@@ -3,6 +3,7 @@
 
 	li{
 		clear:both;
+		position: relative;
 		padding-left:4%;
 		width:96%;
 
@@ -16,7 +17,7 @@
 		position:relative;
 		float:left;
 		padding:.4rem 0;
-		margin-right:1rem;
+		margin-right:.7rem;
 		img{
 			float:left;
 			width:3rem;
@@ -24,16 +25,17 @@
 			border-radius:4rem;
 		}
 		.case{
-			border-radius:.3rem;
+			border-radius: 0;
 		}
 		em{
 			position:absolute;
 			margin-top:-.15rem;
-			margin-left:-.25rem;
+			margin-left:-.29rem;
 			display:inline-block;
 			width:.6rem;
 			height:.6rem;
 			border-radius:.6rem;
+			border: 1px solid #fff;
 			background-color:red;
 		}
 	}
@@ -52,6 +54,28 @@
 	  line-height: 1.2rem;
 	  padding: .8rem 5% .8rem 0;
 	}
+
+	li mark {
+		position: absolute;
+		overflow: hidden;
+		top: 0;
+		right: 0;
+		width: 3.5rem;
+		height: 3.5rem;
+		background: none;
+	}
+	li mark span {
+		display: block;
+		width: 5rem;
+		height: 1.6rem;
+		line-height: 1.6rem;
+		font-size: .7rem;
+		font-weight: bold;
+		text-align: center;
+		transform: rotate(45deg);
+		background-color: #f00;
+		color: #fff;
+		}
 
 	h5{
 		font-weight:normal;
@@ -72,6 +96,10 @@
 		}
 		a{
 			color:gray;
+		}
+		b{
+			color: #e52;
+			font-size: 1.2rem;
 		}
 	}
 	p{
@@ -108,3 +136,56 @@
 
 }
 
+
+
+
+.be-form {
+  background-color: #fff;
+}
+.be-form li {
+  clear: both;
+  padding-left: 5%;
+}
+.be-form span {
+  float: left;
+  text-align: center;
+  margin-top: .4rem;
+}
+.be-form span + div {
+  margin-left: 2.5rem;
+}
+.be-form div {
+  position: relative;
+  padding: .65rem 5% .65rem 0;
+}
+.be-form div > input {
+  width: 100%;
+  border: none;
+}
+.be-form div > em {
+  padding: .35rem .8rem;
+  position: absolute;
+  top: .32rem;
+  right: 5%;
+  font-size: .8rem;
+  color: #666;
+}
+.be-form label {
+  float: right;
+  color: #666;
+}
+.be-form label input {
+  text-align: right;
+  border: none;
+}
+.be-form li:last-child div {
+  border-bottom: none;
+}
+.be-form button {
+  margin-top: -.3rem;
+}
+.be-form li > em {
+  display: block;
+  text-align: center;
+  padding: .7rem 0;
+}

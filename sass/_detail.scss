@@ -26,6 +26,9 @@
 		height:4rem;
 		margin-right:.5rem;
 	}
+	&>li>div>.header{
+		border-radius: 2rem;
+	}
 
 	//border bottom part;
 	&>li>div{
@@ -59,6 +62,9 @@
 			font-size:.8rem;
 			color:#666;
 			line-height:1.3rem;
+		}
+		a{
+			color: gray;
 		}
 
 	}

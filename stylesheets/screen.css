@@ -485,59 +485,77 @@ input {
   height: 3rem;
 }
 
+/* line 14, ../sass/_pub.scss */
+.be-remark {
+  clear: both;
+  padding: .5rem 5%;
+  margin-bottom: .5rem;
+  font-size: .7rem;
+  line-height: 1.2rem;
+  color: gray;
+}
+/* line 21, ../sass/_pub.scss */
+.be-remark a {
+  color: gray;
+}
+/* line 24, ../sass/_pub.scss */
+.be-remark em {
+  float: right;
+}
+
 /*去除标题的加粗样式*/
-/* line 15, ../sass/_pub.scss */
+/* line 29, ../sass/_pub.scss */
 h6, h5, h4, h3 {
   font-weight: normal;
 }
 
 /*设置li列的数量*/
-/* line 20, ../sass/_pub.scss */
+/* line 34, ../sass/_pub.scss */
 .be-col-1 li {
   float: left;
   width: 100%;
 }
 
-/* line 21, ../sass/_pub.scss */
+/* line 35, ../sass/_pub.scss */
 .be-col-2 li {
   float: left;
   width: 50%;
 }
 
-/* line 22, ../sass/_pub.scss */
+/* line 36, ../sass/_pub.scss */
 .be-col-3 li {
   float: left;
   width: 33.33%;
 }
 
-/* line 23, ../sass/_pub.scss */
+/* line 37, ../sass/_pub.scss */
 .be-col-4 li {
   float: left;
   width: 25%;
 }
 
-/* line 24, ../sass/_pub.scss */
+/* line 38, ../sass/_pub.scss */
 .be-col-5 li {
   float: left;
   width: 20%;
 }
 
-/* line 26, ../sass/_pub.scss */
+/* line 40, ../sass/_pub.scss */
 li[data-color="warm"] {
   color: #e52 !important;
 }
 
-/* line 27, ../sass/_pub.scss */
+/* line 41, ../sass/_pub.scss */
 li[data-color="submit"] {
   color: #3aa !important;
 }
 
-/* line 30, ../sass/_pub.scss */
+/* line 44, ../sass/_pub.scss */
 Element {
   border-width: thin;
 }
 
-/* line 33, ../sass/_pub.scss */
+/* line 47, ../sass/_pub.scss */
 html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
   -webkit-text-size-adjust: 100%;
 }
@@ -1099,85 +1117,115 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
 /* line 4, ../sass/_be-list.scss */
 .be-list li {
   clear: both;
+  position: relative;
   padding-left: 4%;
   width: 96%;
 }
-/* line 9, ../sass/_be-list.scss */
+/* line 10, ../sass/_be-list.scss */
 .be-list li:last-child div {
   border-bottom: none;
 }
-/* line 15, ../sass/_be-list.scss */
+/* line 16, ../sass/_be-list.scss */
 .be-list li > span {
   position: relative;
   float: left;
   padding: .4rem 0;
-  margin-right: 1rem;
+  margin-right: .7rem;
 }
-/* line 20, ../sass/_be-list.scss */
+/* line 21, ../sass/_be-list.scss */
 .be-list li > span img {
   float: left;
   width: 3rem;
   height: 3rem;
   border-radius: 4rem;
 }
-/* line 26, ../sass/_be-list.scss */
+/* line 27, ../sass/_be-list.scss */
 .be-list li > span .case {
-  border-radius: .3rem;
+  border-radius: 0;
 }
-/* line 29, ../sass/_be-list.scss */
+/* line 30, ../sass/_be-list.scss */
 .be-list li > span em {
   position: absolute;
   margin-top: -.15rem;
-  margin-left: -.25rem;
+  margin-left: -.29rem;
   display: inline-block;
   width: .6rem;
   height: .6rem;
   border-radius: .6rem;
+  border: 1px solid #fff;
   background-color: red;
 }
-/* line 42, ../sass/_be-list.scss */
+/* line 44, ../sass/_be-list.scss */
 .be-list li > div {
   padding: .6rem 5% .6rem 0;
   line-height: 1.2rem;
 }
-/* line 45, ../sass/_be-list.scss */
+/* line 47, ../sass/_be-list.scss */
 .be-list li > div span {
   display: block;
 }
-/* line 49, ../sass/_be-list.scss */
+/* line 51, ../sass/_be-list.scss */
 .be-list li > small {
   display: block;
   color: #888;
   line-height: 1.2rem;
   padding: .8rem 5% .8rem 0;
 }
-/* line 56, ../sass/_be-list.scss */
+/* line 58, ../sass/_be-list.scss */
+.be-list li mark {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  width: 3.5rem;
+  height: 3.5rem;
+  background: none;
+}
+/* line 67, ../sass/_be-list.scss */
+.be-list li mark span {
+  display: block;
+  width: 5rem;
+  height: 1.6rem;
+  line-height: 1.6rem;
+  font-size: .7rem;
+  font-weight: bold;
+  text-align: center;
+  transform: rotate(45deg);
+  background-color: #f00;
+  color: #fff;
+}
+/* line 80, ../sass/_be-list.scss */
 .be-list h5 {
   font-weight: normal;
   font-size: 1rem;
   margin-bottom: .3rem;
 }
-/* line 60, ../sass/_be-list.scss */
+/* line 84, ../sass/_be-list.scss */
 .be-list h5 small {
   margin-left: .3rem;
   color: gray;
 }
-/* line 64, ../sass/_be-list.scss */
+/* line 88, ../sass/_be-list.scss */
 .be-list h5 i {
   margin-left: .3rem;
 }
-/* line 67, ../sass/_be-list.scss */
+/* line 91, ../sass/_be-list.scss */
 .be-list h5 em {
   font-size: .8rem;
   font-style: normal;
   float: right;
   color: gray;
 }
-/* line 73, ../sass/_be-list.scss */
+/* line 97, ../sass/_be-list.scss */
 .be-list h5 a {
   color: gray;
 }
-/* line 77, ../sass/_be-list.scss */
+/* line 100, ../sass/_be-list.scss */
+.be-list h5 b {
+  color: #e52;
+  font-size: 1.2rem;
+}
+/* line 105, ../sass/_be-list.scss */
 .be-list p {
   font-size: .8rem;
   color: gray;
@@ -1185,33 +1233,107 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-/* line 83, ../sass/_be-list.scss */
+/* line 111, ../sass/_be-list.scss */
 .be-list p em {
   font-style: normal;
   float: right;
 }
-/* line 87, ../sass/_be-list.scss */
+/* line 115, ../sass/_be-list.scss */
 .be-list p i {
   margin-right: .3rem;
 }
-/* line 90, ../sass/_be-list.scss */
+/* line 118, ../sass/_be-list.scss */
 .be-list p a {
   color: gray;
 }
-/* line 96, ../sass/_be-list.scss */
+/* line 124, ../sass/_be-list.scss */
 .be-list label {
   float: right;
   width: 3rem;
   text-align: right;
   color: #666;
 }
-/* line 101, ../sass/_be-list.scss */
+/* line 129, ../sass/_be-list.scss */
 .be-list label i {
   line-height: 2.5rem;
 }
-/* line 105, ../sass/_be-list.scss */
+/* line 133, ../sass/_be-list.scss */
 .be-list .fa-color-green {
   color: green;
+}
+
+/* line 142, ../sass/_be-list.scss */
+.be-form {
+  background-color: #fff;
+}
+
+/* line 145, ../sass/_be-list.scss */
+.be-form li {
+  clear: both;
+  padding-left: 5%;
+}
+
+/* line 149, ../sass/_be-list.scss */
+.be-form span {
+  float: left;
+  text-align: center;
+  margin-top: .4rem;
+}
+
+/* line 154, ../sass/_be-list.scss */
+.be-form span + div {
+  margin-left: 2.5rem;
+}
+
+/* line 157, ../sass/_be-list.scss */
+.be-form div {
+  position: relative;
+  padding: .65rem 5% .65rem 0;
+}
+
+/* line 161, ../sass/_be-list.scss */
+.be-form div > input {
+  width: 100%;
+  border: none;
+}
+
+/* line 165, ../sass/_be-list.scss */
+.be-form div > em {
+  padding: .35rem .8rem;
+  position: absolute;
+  top: .32rem;
+  right: 5%;
+  font-size: .8rem;
+  color: #666;
+}
+
+/* line 173, ../sass/_be-list.scss */
+.be-form label {
+  float: right;
+  color: #666;
+}
+
+/* line 177, ../sass/_be-list.scss */
+.be-form label input {
+  text-align: right;
+  border: none;
+}
+
+/* line 181, ../sass/_be-list.scss */
+.be-form li:last-child div {
+  border-bottom: none;
+}
+
+/* line 184, ../sass/_be-list.scss */
+.be-form button {
+  margin-top: -.3rem;
+}
+
+/* line 187, ../sass/_be-list.scss */
+.be-form li > em {
+  display: block;
+  text-align: center;
+  padding: .7rem 0;
 }
 
 /* line 1, ../sass/_form-list.scss */
@@ -1461,31 +1583,37 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
   color: #666;
 }
 
-/* line 5, ../sass/_be-fold.scss */
+/* line 2, ../sass/_be-fold.scss */
+.be-fold > li {
+  clear: both;
+}
+/* line 6, ../sass/_be-fold.scss */
 .be-fold > li > h5 + ul {
   display: none;
   margin-bottom: -1px;
 }
-/* line 9, ../sass/_be-fold.scss */
+/* line 10, ../sass/_be-fold.scss */
 .be-fold > .active > h5 + ul {
   display: block;
 }
-/* line 12, ../sass/_be-fold.scss */
+/* line 13, ../sass/_be-fold.scss */
 .be-fold > li > h5 {
   display: block;
   width: 90%;
-  padding: .9rem 5%;
+  padding: .8rem 5%;
   background-color: #f6f6f6;
   border-bottom: none;
 }
-/* line 20, ../sass/_be-fold.scss */
+/* line 21, ../sass/_be-fold.scss */
 .be-fold > li > h5 > i {
+  width: .5rem;
   margin-right: .3rem;
   color: #520;
 }
-/* line 24, ../sass/_be-fold.scss */
+/* line 26, ../sass/_be-fold.scss */
 .be-fold > li > h5 > em {
   float: right;
+  color: gray;
 }
 
 /* line 1, ../sass/_flow.scss */
@@ -1573,72 +1701,80 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
   height: 4rem;
   margin-right: .5rem;
 }
-/* line 31, ../sass/_detail.scss */
+/* line 29, ../sass/_detail.scss */
+.be-detail > li > div > .header {
+  border-radius: 2rem;
+}
+/* line 34, ../sass/_detail.scss */
 .be-detail > li > div {
   width: 100%;
   float: left;
   padding: .5rem 0 0 0;
   margin-bottom: .5rem;
 }
-/* line 36, ../sass/_detail.scss */
+/* line 39, ../sass/_detail.scss */
 .be-detail > li > div h6 {
   font-size: 1rem;
   line-height: 1.2rem;
   font-weight: normal;
   margin-bottom: .2rem;
 }
-/* line 42, ../sass/_detail.scss */
+/* line 45, ../sass/_detail.scss */
 .be-detail > li > div > span {
   display: block;
   margin-left: 5rem;
 }
-/* line 46, ../sass/_detail.scss */
+/* line 49, ../sass/_detail.scss */
 .be-detail > li > div small {
   font-size: .8rem;
   line-height: 1.5rem;
   color: #888;
 }
-/* line 51, ../sass/_detail.scss */
+/* line 54, ../sass/_detail.scss */
 .be-detail > li > div small em {
   float: right;
   margin-right: 5%;
 }
-/* line 55, ../sass/_detail.scss */
+/* line 58, ../sass/_detail.scss */
 .be-detail > li > div i {
   margin-right: .3rem;
 }
-/* line 58, ../sass/_detail.scss */
+/* line 61, ../sass/_detail.scss */
 .be-detail > li > div p {
   font-size: .8rem;
   color: #666;
   line-height: 1.3rem;
 }
 /* line 66, ../sass/_detail.scss */
+.be-detail > li > div a {
+  color: gray;
+}
+/* line 72, ../sass/_detail.scss */
 .be-detail ol {
   float: left;
   width: 100%;
   margin: .3rem 0 -.5rem 0;
 }
-/* line 70, ../sass/_detail.scss */
+/* line 76, ../sass/_detail.scss */
 .be-detail ol li {
   float: left;
   padding: .3rem 0;
   color: #520;
 }
-/* line 75, ../sass/_detail.scss */
+/* line 81, ../sass/_detail.scss */
 .be-detail ol i {
   margin-right: .3rem;
 }
-/* line 78, ../sass/_detail.scss */
+/* line 84, ../sass/_detail.scss */
 .be-detail ol span {
   color: #666;
 }
-/* line 84, ../sass/_detail.scss */
+/* line 90, ../sass/_detail.scss */
 .be-detail .fa-minus {
   color: #520;
 }
 
-/* line 90, ../sass/_detail.scss */
+/* line 96, ../sass/_detail.scss */
 .detail-content {
   font-size: .9rem;
   line-height: 1.5rem;
@@ -1649,7 +1785,7 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
   border-bottom: 1px solid #ccc;
 }
 
-/* line 100, ../sass/_detail.scss */
+/* line 106, ../sass/_detail.scss */
 .common-notes {
   clear: both;
   font-size: .8rem;
@@ -1769,30 +1905,30 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
   width: 100%;
   background-color: #fff;
 }
-/* line 7, ../sass/_login.scss */
+/* line 6, ../sass/_login.scss */
 .be-login li {
   padding: 0 0 0 5%;
 }
-/* line 9, ../sass/_login.scss */
+/* line 8, ../sass/_login.scss */
 .be-login li:last-child div {
   border-bottom: none;
 }
-/* line 12, ../sass/_login.scss */
+/* line 11, ../sass/_login.scss */
 .be-login li div > i {
   width: 2rem;
   text-align: center;
   font-size: 1.3rem;
 }
-/* line 18, ../sass/_login.scss */
+/* line 17, ../sass/_login.scss */
 .be-login li div > span {
   display: block;
   margin-right: 35%;
 }
-/* line 23, ../sass/_login.scss */
+/* line 22, ../sass/_login.scss */
 .be-login li div > div {
   margin: 0 32% 0 2.2rem;
 }
-/* line 27, ../sass/_login.scss */
+/* line 26, ../sass/_login.scss */
 .be-login li button {
   float: right;
   padding: .25rem .4rem;
@@ -1800,19 +1936,19 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
   font-size: .8rem;
   color: gray;
 }
-/* line 35, ../sass/_login.scss */
+/* line 34, ../sass/_login.scss */
 .be-login li input {
   width: 100%;
   margin: .4rem 0;
   padding: .3rem 0;
   border: none;
 }
-/* line 43, ../sass/_login.scss */
+/* line 42, ../sass/_login.scss */
 .be-login li i {
   float: left;
   margin-top: .5rem;
 }
-/* line 48, ../sass/_login.scss */
+/* line 47, ../sass/_login.scss */
 .be-login li .fa-lock {
   margin: .8rem 5% 0 0;
   float: right;
@@ -1820,15 +1956,15 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
   color: gray;
 }
 
-/* line 60, ../sass/_login.scss */
+/* line 59, ../sass/_login.scss */
 .login-whiteTheme i, .login-whiteTheme label {
   color: #ccc;
 }
-/* line 63, ../sass/_login.scss */
+/* line 62, ../sass/_login.scss */
 .login-whiteTheme label {
   color: #ccc;
 }
-/* line 66, ../sass/_login.scss */
+/* line 65, ../sass/_login.scss */
 .login-whiteTheme input, .login-whiteTheme .active {
   color: #000;
 }
