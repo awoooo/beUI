@@ -573,7 +573,7 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 2.5rem;
   padding: 0.5rem 0;
-  background: #520;
+  background: #630;
 }
 /* line 15, ../sass/_header.scss */
 .be-header span {
@@ -599,7 +599,7 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
   line-height: 2.5rem;
   text-align: center;
   color: #fff;
-  background: #883600;
+  background: #994d00;
   border-radius: 0.3rem;
 }
 /* line 41, ../sass/_header.scss */
@@ -632,8 +632,8 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
   height: 2.5rem;
   line-height: 2.5rem;
   color: #fff;
-  background-color: rgba(85, 34, 0, 0.9);
-  border-top: 1px solid #220e00;
+  background-color: rgba(102, 51, 0, 0.9);
+  border-top: 1px solid #331a00;
 }
 /* line 71, ../sass/_header.scss */
 .be-header ol li i {
@@ -642,7 +642,7 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
 }
 /* line 76, ../sass/_header.scss */
 .be-header ol li:last-child {
-  border-bottom: 1px solid #220e00;
+  border-bottom: 1px solid #331a00;
 }
 
 /* line 1, ../sass/_personal-header.scss */
@@ -720,6 +720,76 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
   margin-right: .3rem;
 }
 
+/* line 1, ../sass/_index-header.scss */
+.be-header-index {
+  position: fixed;
+  width: 96%;
+  top: 0;
+  padding: .4rem 2%;
+  background-color: #630;
+  z-index: 999;
+}
+/* line 9, ../sass/_index-header.scss */
+.be-header-index > span {
+  display: inline-block;
+  float: left;
+  width: 2.4rem;
+  height: 2.4rem;
+  line-height: 2.4rem;
+  text-align: center;
+  border-radius: .3rem;
+  border: 2px solid #fff;
+  overflow: hidden;
+}
+/* line 20, ../sass/_index-header.scss */
+.be-header-index .circle {
+  border-radius: 2rem;
+}
+/* line 24, ../sass/_index-header.scss */
+.be-header-index img {
+  width: 100%;
+}
+/* line 28, ../sass/_index-header.scss */
+.be-header-index i {
+  float: right;
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  border-radius: .3rem;
+  color: #fff;
+  background: #994d00;
+  border: 2px solid #630;
+}
+/* line 41, ../sass/_index-header.scss */
+.be-header-index ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 2.8rem;
+  margin: 0 3.5rem;
+  text-align: center;
+  color: #fff;
+}
+/* line 53, ../sass/_index-header.scss */
+.be-header-index li {
+  font-size: .7rem;
+  line-height: 1.3rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+/* line 58, ../sass/_index-header.scss */
+.be-header-index li:first-child {
+  font-size: 1rem;
+  color: #fff;
+}
+
+/* line 65, ../sass/_index-header.scss */
+.be-index-place {
+  width: 100%;
+  height: 3.6rem;
+}
+
 /* line 1, ../sass/_sumary.scss */
 .be-sumary {
   float: left;
@@ -748,7 +818,7 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
   font-size: 1rem;
   font-style: normal;
   font-weight: bold;
-  color: #520;
+  color: #630;
 }
 /* line 28, ../sass/_sumary.scss */
 .be-sumary span {
@@ -808,12 +878,12 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
 
 /* line 44, ../sass/_search.scss */
 .search-dark {
-  background-color: #520;
+  background-color: #630;
 }
 /* line 46, ../sass/_search.scss */
 .search-dark input, .search-dark i {
   color: #fff;
-  background-color: #883600;
+  background-color: #994d00;
 }
 
 /* line 4, ../sass/_search-list.scss */
@@ -953,8 +1023,8 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
   line-height: 2rem;
   text-align: center;
   color: #fff;
-  border: 1px solid #520;
-  background-color: #520;
+  border: 1px solid #630;
+  background-color: #630;
 }
 /* line 135, ../sass/_search-list.scss */
 .be-search-list-func div {
@@ -1022,12 +1092,12 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
 
 /* line 197, ../sass/_search-list.scss */
 .search-dark {
-  background-color: #520;
+  background-color: #630;
 }
 /* line 199, ../sass/_search-list.scss */
 .search-dark input {
   color: #fff;
-  background-color: #883600;
+  background-color: #994d00;
 }
 
 /* line 1, ../sass/_footer.scss */
@@ -1035,10 +1105,11 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: #fff;
+  background-color: #f6f6f6;
 }
 /* line 7, ../sass/_footer.scss */
 .be-footer div {
+  position: relative;
   float: left;
   text-align: center;
   height: 2rem;
@@ -1046,42 +1117,65 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   color: gray;
 }
-/* line 14, ../sass/_footer.scss */
+/* line 15, ../sass/_footer.scss */
 .be-footer div:active {
   background-color: #d9d9d9;
 }
-/* line 18, ../sass/_footer.scss */
+/* line 19, ../sass/_footer.scss */
 .be-footer p {
   margin-top: .1rem;
   font-size: .8rem;
 }
-/* line 22, ../sass/_footer.scss */
+/* line 24, ../sass/_footer.scss */
 .be-footer .active {
-  color: #520;
+  color: #630;
 }
-/* line 25, ../sass/_footer.scss */
+/* line 27, ../sass/_footer.scss */
 .be-footer li:active {
   background-color: #ccc;
 }
 
-/* line 33, ../sass/_footer.scss */
+/* line 35, ../sass/_footer.scss */
 .be-footer-2 div {
   width: 50%;
 }
 
-/* line 39, ../sass/_footer.scss */
+/* line 41, ../sass/_footer.scss */
 .be-footer-3 div {
   width: 33.33%;
 }
 
-/* line 45, ../sass/_footer.scss */
+/* line 47, ../sass/_footer.scss */
 .be-footer-4 div {
   width: 25%;
 }
 
-/* line 51, ../sass/_footer.scss */
+/* line 53, ../sass/_footer.scss */
 .be-footer-5 div {
   width: 20%;
+}
+
+/* line 58, ../sass/_footer.scss */
+.be-bubble {
+  display: inline-block;
+  position: absolute;
+  margin-left: -.2rem;
+  padding: .15rem .25rem;
+  top: .2rem;
+  border-radius: 5rem;
+  font-size: .6rem;
+  line-height: .6rem;
+  font-weight: bold;
+  color: #fff;
+  border: 1px solid #f6f6f6;
+  background-color: #f00;
+}
+
+/* line 73, ../sass/_footer.scss */
+.be-bubble:empty {
+  padding: .2rem .2rem;
+  width: .2rem;
+  height: .18rem;
 }
 
 /* line 1, ../sass/_func.scss */
@@ -1608,7 +1702,7 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
 .be-fold > li > h5 > i {
   width: .5rem;
   margin-right: .3rem;
-  color: #520;
+  color: #630;
 }
 /* line 26, ../sass/_be-fold.scss */
 .be-fold > li > h5 > em {
@@ -1629,7 +1723,7 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
   height: 1rem;
   border-radius: 1rem;
   color: #fff;
-  background-color: #520;
+  background-color: #630;
   line-height: 1rem;
   text-align: center;
   font-size: .6rem;
@@ -1759,7 +1853,7 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
 .be-detail ol li {
   float: left;
   padding: .3rem 0;
-  color: #520;
+  color: #630;
 }
 /* line 81, ../sass/_detail.scss */
 .be-detail ol i {
@@ -1771,7 +1865,7 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
 }
 /* line 90, ../sass/_detail.scss */
 .be-detail .fa-minus {
-  color: #520;
+  color: #630;
 }
 
 /* line 96, ../sass/_detail.scss */
@@ -1980,7 +2074,7 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
   background-color: #fff;
   font-size: 1rem;
   text-align: center;
-  color: #520;
+  color: #630;
 }
 /* line 12, ../sass/_checkbox.scss */
 .common-checkbox li div, .common-checkbox-radio li div {
@@ -1997,7 +2091,7 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
 }
 /* line 25, ../sass/_checkbox.scss */
 .common-checkbox .active, .common-checkbox-radio .active {
-  background-color: #520;
+  background-color: #630;
   color: #fff;
 }
 
@@ -2166,7 +2260,7 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
   float: left;
   padding: .4rem 0;
   font-size: .8rem;
-  color: #520;
+  color: #630;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
 }
@@ -2196,11 +2290,11 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
 }
 /* line 22, ../sass/_tab.scss */
 .be-tab-title .active p {
-  color: #520;
+  color: #630;
 }
 /* line 25, ../sass/_tab.scss */
 .be-tab-title .active span {
-  background-color: #520;
+  background-color: #630;
 }
 /* line 29, ../sass/_tab.scss */
 .be-tab-title a {
@@ -2229,7 +2323,7 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
 }
 /* line 7, ../sass/_title.scss */
 .be-title i {
-  color: #520;
+  color: #630;
 }
 /* line 10, ../sass/_title.scss */
 .be-title span {
@@ -2248,10 +2342,11 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
 /* line 1, ../sass/_btn.scss */
 .be-btn {
   width: 90%;
+  clear: both;
   padding: 0 5%;
   margin: 1.5rem 0 2rem 0;
 }
-/* line 4, ../sass/_btn.scss */
+/* line 5, ../sass/_btn.scss */
 .be-btn button {
   display: inline-block;
   margin: .5rem 0;
@@ -2261,73 +2356,73 @@ html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
   border-radius: .3rem;
 }
 
-/* line 18, ../sass/_btn.scss */
+/* line 19, ../sass/_btn.scss */
 .be-col-1 button {
   width: 100%;
 }
 
-/* line 22, ../sass/_btn.scss */
+/* line 23, ../sass/_btn.scss */
 .be-col-2 button {
   width: 47.5%;
 }
-/* line 23, ../sass/_btn.scss */
+/* line 24, ../sass/_btn.scss */
 .be-col-2 button:last-child {
   float: right;
 }
 
-/* line 29, ../sass/_btn.scss */
+/* line 30, ../sass/_btn.scss */
 .be-col-3 button {
   width: 30%;
 }
-/* line 30, ../sass/_btn.scss */
+/* line 31, ../sass/_btn.scss */
 .be-col-3 button:first-child {
   float: left;
   margin-right: 5%;
 }
-/* line 32, ../sass/_btn.scss */
+/* line 33, ../sass/_btn.scss */
 .be-col-3 button:last-child {
   float: right;
 }
 
-/* line 38, ../sass/_btn.scss */
+/* line 39, ../sass/_btn.scss */
 .btn-whiteTheme button {
   background-color: #fff;
   border: 1px solid #ccc;
 }
-/* line 40, ../sass/_btn.scss */
+/* line 41, ../sass/_btn.scss */
 .btn-whiteTheme .be-btn-normal {
   color: #396;
 }
-/* line 41, ../sass/_btn.scss */
+/* line 42, ../sass/_btn.scss */
 .btn-whiteTheme .be-btn-submit {
   color: #3af;
 }
-/* line 42, ../sass/_btn.scss */
+/* line 43, ../sass/_btn.scss */
 .btn-whiteTheme .be-btn-cancer {
   color: #e52;
 }
-/* line 43, ../sass/_btn.scss */
+/* line 44, ../sass/_btn.scss */
 .btn-whiteTheme .be-btn-unactived {
   color: #bbb;
 }
 
-/* line 49, ../sass/_btn.scss */
+/* line 50, ../sass/_btn.scss */
 .btn-colorTheme button, .be-btn button {
   color: #fff;
 }
-/* line 50, ../sass/_btn.scss */
+/* line 51, ../sass/_btn.scss */
 .btn-colorTheme .be-btn-normal, .be-btn .be-btn-normal {
   background-color: #396;
 }
-/* line 51, ../sass/_btn.scss */
+/* line 52, ../sass/_btn.scss */
 .btn-colorTheme .be-btn-submit, .be-btn .be-btn-submit {
   background-color: #3af;
 }
-/* line 52, ../sass/_btn.scss */
+/* line 53, ../sass/_btn.scss */
 .btn-colorTheme .be-btn-cancer, .be-btn .be-btn-cancer {
   background-color: #e52;
 }
-/* line 53, ../sass/_btn.scss */
+/* line 54, ../sass/_btn.scss */
 .btn-colorTheme .be-btn-unactived, .be-btn .be-btn-unactived {
   background-color: #bbb;
 }

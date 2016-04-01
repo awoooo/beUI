@@ -1,0 +1,9 @@
+	<header class="be-header-index be-border-tb">
+		<span> <img src="/images/header.jpg"> </span>
+		<i data-href="index.html" class="fa fa-gear fa-2x"></i>
+		<ul>
+			<li>用户姓名</li>
+			<li>185898882347834</li>
+		</ul>  
+	</header>
+	<div class="be-index-place"></div>
